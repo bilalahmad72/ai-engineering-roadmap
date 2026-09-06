@@ -14,7 +14,7 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 
 ### D01 — Python setup + syntax (Dart se mapping)
 
-⬜ **Pending** · 2h · ref `0.1`
+🟡 **Running** · 2h · ref `0.1`
 
 **Objectives**
 
@@ -29,6 +29,8 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 - [ ] requirements.txt generate karo (pip freeze)
 
 **Deliverable:** Dart-vs-Python cheatsheet note
+
+**Notes:** [D01-python-setup.md](notes/daily/D01-python-setup.md)
 
 ### D02 — Python async + HTTP client
 

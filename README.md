@@ -14,14 +14,14 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 | **Hours logged** | 0 / 132 h |
 | **Pace** | ~2 hours/day, 6 days/week |
 | **Est. remaining** | ~11.0 weeks |
-| **Last updated** | 2026-09-06 11:39 UTC |
+| **Last updated** | 2026-09-06 11:48 UTC |
 
 ✅ Done &nbsp; 🟡 In progress &nbsp; ⬜ Pending &nbsp; ⏭️ Skipped
 
 ## 📍 Abhi kahan hoon
 
-- Koi din abhi running nahi hai.
-- ⬜ **Next up:** `D01` — Python setup + syntax (Dart se mapping)  _( Foundations )_
+- 🟡 **In progress:** `D01` — Python setup + syntax (Dart se mapping)  _( Foundations )_
+- ⬜ **Next up:** `D02` — Python async + HTTP client  _( Foundations )_
 
 ---
 
@@ -29,7 +29,7 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 
 | # | Phase | Days | Progress | Status |
 |---|---|---|---|---|
-| 1 | **Foundations** | `D01–D04` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
+| 1 | **Foundations** | `D01–D04` | `░░░░░░░░░░░░` 0% | 🟡 Running |
 | 2 | **LLM Fundamentals + API Integration** | `D05–D14` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
 | 3 | **Flutter + AI Integration (Client)** | `D15–D20` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
 | 4 | **RAG (Retrieval-Augmented Generation)** | `D21–D34` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
@@ -44,14 +44,14 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 
 _Click a phase to expand._
 
-<details>
-<summary><b>⬜ Foundations</b> — 0/4 days (0%) · <code>PHASE 0</code></summary>
+<details open>
+<summary><b>🟡 Foundations</b> — 0/4 days (0%) · <code>PHASE 0</code></summary>
 
 > Python + API basics tak comfortable ho jana, taake LLM APIs se baat karna rukawat na bane.
 
 | Day | Topic | Tasks | Status | Notes |
 |---|---|---|---|---|
-| `D01` | [Python setup + syntax (Dart se mapping)](ROADMAP.md#d01-python-setup-syntax-dart-se-mapping) | 0/4 | ⬜ | — |
+| `D01` | [Python setup + syntax (Dart se mapping)](ROADMAP.md#d01-python-setup-syntax-dart-se-mapping) | 0/4 | 🟡 | [📝](notes/daily/D01-python-setup.md) |
 | `D02` | [Python async + HTTP client](ROADMAP.md#d02-python-async-http-client) | 0/4 | ⬜ | — |
 | `D03` | [FastAPI basics + .env secrets](ROADMAP.md#d03-fastapi-basics-env-secrets) | 0/4 | ⬜ | — |
 | `D04` | [API refresher: streaming, retries, rate limits](ROADMAP.md#d04-api-refresher-streaming-retries-rate-limits) | 0/4 | ⬜ | — |

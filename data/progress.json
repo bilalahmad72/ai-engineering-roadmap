@@ -2,17 +2,32 @@
   "meta": {
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
-    "started": null,
-    "updated": "2026-09-06 11:40 UTC"
+    "started": "2026-09-06",
+    "updated": "2026-09-06 11:48 UTC"
   },
   "days": {
     "D01": {
-      "status": "pending",
-      "started": null,
+      "status": "running",
+      "started": "2026-09-06",
       "completed": null,
       "tasks_done": [],
-      "notes": [],
-      "log": []
+      "notes": [
+        "notes/daily/D01-python-setup.md"
+      ],
+      "log": [
+        {
+          "at": "2026-09-06 11:48 UTC",
+          "text": "Started"
+        },
+        {
+          "at": "2026-09-06 11:48 UTC",
+          "text": "Note added: notes/daily/D01-python-setup.md"
+        },
+        {
+          "at": "2026-09-06 11:48 UTC",
+          "text": "Session shuru — environment verified: Python 3.13.14, pip 26.2, venv module OK"
+        }
+      ]
     },
     "D02": {
       "status": "pending",
