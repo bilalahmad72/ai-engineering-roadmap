@@ -24,7 +24,7 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 **Tasks**
 
 - [x] venv banao: python -m venv .venv, activate karo, pip install httpx
-- [ ] Ek cheatsheet likho: Dart List/Map/class/null-safety -> Python list/dict/class/Optional
+- [x] Ek cheatsheet likho: Dart List/Map/class/null-safety -> Python list/dict/class/Optional
 - [ ] JSON parse + dump ka chhota script likho (json module)
 - [ ] requirements.txt generate karo (pip freeze)
 
