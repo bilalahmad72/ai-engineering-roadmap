@@ -197,6 +197,11 @@ def gen_readme(blocks: list[dict], progress: dict, stats: dict) -> str:
         "aur notes yahin track hote hain."
     )
     A("")
+    A(
+        "### 👉 [Interactive dashboard]"
+        "(https://bilalahmad72.github.io/ai-engineering-roadmap/)"
+    )
+    A("")
     A("| | |")
     A("|---|---|")
     A(f"| **Progress** | `{bar(stats['percent'])}` **{stats['percent']}%** |")

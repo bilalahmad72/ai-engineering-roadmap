@@ -4,6 +4,8 @@
 
 Learning in public. Ye repo ek **live progress board** hai — har din ka plan, status aur notes yahin track hote hain.
 
+### 👉 [Interactive dashboard](https://bilalahmad72.github.io/ai-engineering-roadmap/)
+
 | | |
 |---|---|
 | **Progress** | `░░░░░░░░░░░░░░░░░░░░` **0%** |
@@ -12,7 +14,7 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 | **Hours logged** | 0 / 132 h |
 | **Pace** | ~2 hours/day, 6 days/week |
 | **Est. remaining** | ~11.0 weeks |
-| **Last updated** | — |
+| **Last updated** | 2026-09-06 11:39 UTC |
 
 ✅ Done &nbsp; 🟡 In progress &nbsp; ⬜ Pending &nbsp; ⏭️ Skipped
 
