@@ -9,19 +9,19 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 | | |
 |---|---|
 | **Progress** | `░░░░░░░░░░░░░░░░░░░░` **0%** |
-| **Days** | 0 / 66 complete |
-| **Tasks** | 2 / 264 checked |
-| **Hours logged** | 0 / 132 h |
+| **Days** | 0 / 78 complete |
+| **Tasks** | 2 / 312 checked |
+| **Hours logged** | 0 / 156 h |
 | **Pace** | ~2 hours/day, 6 days/week |
-| **Est. remaining** | ~11.0 weeks |
+| **Est. remaining** | ~13.0 weeks |
 | **Last updated** | 2026-09-06 12:28 UTC |
 
 ✅ Done &nbsp; 🟡 In progress &nbsp; ⬜ Pending &nbsp; ⏭️ Skipped
 
 ## 📍 Abhi kahan hoon
 
-- 🟡 **In progress:** `D01` — Python setup + syntax (Dart se mapping)  _( Foundations )_
-- ⬜ **Next up:** `D02` — Python async + HTTP client  _( Foundations )_
+- 🟡 **In progress:** `D01` — Python setup + syntax (Dart se mapping)  _( Setup )_
+- ⬜ **Next up:** `PY01` — Syntax, variables, types aur strings  _( Python Core (scratch se) )_
 
 ---
 
@@ -29,14 +29,16 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 
 | # | Phase | Days | Progress | Status |
 |---|---|---|---|---|
-| 1 | **Foundations** | `D01–D04` | `░░░░░░░░░░░░` 0% | 🟡 Running |
-| 2 | **LLM Fundamentals + API Integration** | `D05–D14` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
-| 3 | **Flutter + AI Integration (Client)** | `D15–D20` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
-| 4 | **RAG (Retrieval-Augmented Generation)** | `D21–D34` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
-| 5 | **AI Agents & Tool Use** | `D35–D48` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
-| 6 | **Backend Architecture for AI Flutter Apps** | `D49–D52` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
-| 7 | **Production, Cost & Reliability** | `D53–D56` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
-| 8 | **Portfolio & Positioning** | `D57–D66` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
+| 1 | **Setup** | `D01–D01` | `░░░░░░░░░░░░` 0% | 🟡 Running |
+| 2 | **Python Core (scratch se)** | `PY01–PY12` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
+| 3 | **API Foundations (Python me)** | `D02–D04` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
+| 4 | **LLM Fundamentals + API Integration** | `D05–D14` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
+| 5 | **Flutter + AI Integration (Client)** | `D15–D20` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
+| 6 | **RAG (Retrieval-Augmented Generation)** | `D21–D34` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
+| 7 | **AI Agents & Tool Use** | `D35–D48` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
+| 8 | **Backend Architecture for AI Flutter Apps** | `D49–D52` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
+| 9 | **Production, Cost & Reliability** | `D53–D56` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
+| 10 | **Portfolio & Positioning** | `D57–D66` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
 
 ---
 
@@ -45,13 +47,45 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 _Click a phase to expand._
 
 <details open>
-<summary><b>🟡 Foundations</b> — 0/4 days (0%) · <code>PHASE 0</code></summary>
+<summary><b>🟡 Setup</b> — 0/1 days (0%) · <code>PHASE 0</code></summary>
 
-> Python + API basics tak comfortable ho jana, taake LLM APIs se baat karna rukawat na bane.
+> Machine ready: Python, venv, VS Code aur repo workflow.
 
 | Day | Topic | Tasks | Status | Notes |
 |---|---|---|---|---|
 | `D01` | [Python setup + syntax (Dart se mapping)](ROADMAP.md#d01-python-setup-syntax-dart-se-mapping) | 2/4 | 🟡 | [📝](notes/daily/D01-python-setup.md) [📝](notes/TOOLING.md) |
+
+</details>
+
+<details>
+<summary><b>⬜ Python Core (scratch se)</b> — 0/12 days (0%) · <code>PHASE 0.1 — expanded</code></summary>
+
+> Python zero se poori tarah — sirf itna jitna is safar me chahiye, lekin woh mazbooti se. Maqsad: kisi bhi maujooda Python file ko khol kar samajh lena.
+
+| Day | Topic | Tasks | Status | Notes |
+|---|---|---|---|---|
+| `PY01` | [Syntax, variables, types aur strings](ROADMAP.md#py01-syntax-variables-types-aur-strings) | 0/4 | ⬜ | — |
+| `PY02` | [Collections: list, tuple, dict, set](ROADMAP.md#py02-collections-list-tuple-dict-set) | 0/4 | ⬜ | — |
+| `PY03` | [Control flow: if, loops, comprehensions](ROADMAP.md#py03-control-flow-if-loops-comprehensions) | 0/4 | ⬜ | — |
+| `PY04` | [Functions poori tarah](ROADMAP.md#py04-functions-poori-tarah) | 0/4 | ⬜ | — |
+| `PY05` | [Modules, imports aur project structure](ROADMAP.md#py05-modules-imports-aur-project-structure) | 0/4 | ⬜ | — |
+| `PY06` | [Files, paths, JSON aur environment](ROADMAP.md#py06-files-paths-json-aur-environment) | 0/4 | ⬜ | — |
+| `PY07` | [Errors aur exceptions](ROADMAP.md#py07-errors-aur-exceptions) | 0/4 | ⬜ | — |
+| `PY08` | [OOP: classes, dataclass, properties](ROADMAP.md#py08-oop-classes-dataclass-properties) | 0/4 | ⬜ | — |
+| `PY09` | [Iterators aur generators (streaming ki bunyad)](ROADMAP.md#py09-iterators-aur-generators-streaming-ki-bunyad) | 0/4 | ⬜ | — |
+| `PY10` | [Async Python (asyncio)](ROADMAP.md#py10-async-python-asyncio) | 0/4 | ⬜ | — |
+| `PY11` | [Typing, stdlib aur Pythonic idioms](ROADMAP.md#py11-typing-stdlib-aur-pythonic-idioms) | 0/4 | ⬜ | — |
+| `PY12` | [Doosron ka Python code parhna (asli imtihan)](ROADMAP.md#py12-doosron-ka-python-code-parhna-asli-imtihan) | 0/4 | ⬜ | — |
+
+</details>
+
+<details>
+<summary><b>⬜ API Foundations (Python me)</b> — 0/3 days (0%) · <code>PHASE 0.1 / 0.2</code></summary>
+
+> Python core ko asli kaam par lagana: async HTTP, FastAPI, aur SSE streaming - LLM APIs se pehle ka aakhri padao.
+
+| Day | Topic | Tasks | Status | Notes |
+|---|---|---|---|---|
 | `D02` | [Python async + HTTP client](ROADMAP.md#d02-python-async-http-client) | 0/4 | ⬜ | — |
 | `D03` | [FastAPI basics + .env secrets](ROADMAP.md#d03-fastapi-basics-env-secrets) | 0/4 | ⬜ | — |
 | `D04` | [API refresher: streaming, retries, rate limits](ROADMAP.md#d04-api-refresher-streaming-retries-rate-limits) | 0/4 | ⬜ | — |

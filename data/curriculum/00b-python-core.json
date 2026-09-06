@@ -1,0 +1,213 @@
+{
+  "block_id": "P0B",
+  "order": 1.5,
+  "title": "Python Core (scratch se)",
+  "roadmap_ref": "PHASE 0.1 — expanded",
+  "goal": "Python zero se poori tarah — sirf itna jitna is safar me chahiye, lekin woh mazbooti se. Maqsad: kisi bhi maujooda Python file ko khol kar samajh lena.",
+  "days": [
+    {
+      "id": "PY01",
+      "title": "Syntax, variables, types aur strings",
+      "hours": 2,
+      "objectives": [
+        "Python ka syntax model (indentation, no semicolons, no braces)",
+        "Types, type conversion aur f-strings"
+      ],
+      "tasks": [
+        "int/float/str/bool/None ke saath khelo, type() aur isinstance() use karo",
+        "String methods: upper, lower, strip, split, join, replace, startswith, in",
+        "f-string formatting: {value:.2f}, {value:,}, {value!r}, multi-line",
+        "PRACTICE: 8 exercises khud likho, check.py green karo"
+      ],
+      "deliverable": "PY01 practice — sab tests green",
+      "ref": "0.1"
+    },
+    {
+      "id": "PY02",
+      "title": "Collections: list, tuple, dict, set",
+      "hours": 2,
+      "objectives": [
+        "Chaaron collections aur unka sahi istemal",
+        "Indexing, slicing aur mutation"
+      ],
+      "tasks": [
+        "list: append/extend/insert/remove/pop/sort/reverse + slicing [a:b:c]",
+        "dict: get/keys/values/items/update/pop + nested access",
+        "set: add/remove/union/intersection + duplicates hatana",
+        "tuple: immutability, unpacking, swap; PRACTICE: exercises green karo"
+      ],
+      "deliverable": "PY02 practice — sab tests green",
+      "ref": "0.1"
+    },
+    {
+      "id": "PY03",
+      "title": "Control flow: if, loops, comprehensions",
+      "hours": 2,
+      "objectives": [
+        "Conditions aur loops Python ke tareeqe se",
+        "Comprehensions — Python ka signature idiom"
+      ],
+      "tasks": [
+        "if/elif/else, truthy-falsy values, ternary, match statement",
+        "for + range/enumerate/zip, while, break/continue/else",
+        "List/dict/set comprehensions, nested aur conditional",
+        "PRACTICE: exercises green karo"
+      ],
+      "deliverable": "PY03 practice — sab tests green",
+      "ref": "0.1"
+    },
+    {
+      "id": "PY04",
+      "title": "Functions poori tarah",
+      "hours": 2,
+      "objectives": [
+        "Parameters ki saari qismein",
+        "Scope, closures aur lambda"
+      ],
+      "tasks": [
+        "positional, default, keyword-only, *args, **kwargs",
+        "Multiple return values (tuple unpacking), type hints",
+        "Scope: local/global, aur mutable default argument ka mashhoor bug",
+        "lambda, map/filter vs comprehension; PRACTICE: exercises green karo"
+      ],
+      "deliverable": "PY04 practice — sab tests green",
+      "ref": "0.1"
+    },
+    {
+      "id": "PY05",
+      "title": "Modules, imports aur project structure",
+      "hours": 2,
+      "objectives": [
+        "Code ko multiple files me todna",
+        "import system samajhna"
+      ],
+      "tasks": [
+        "import x / from x import y / as alias, aur circular import ka masla",
+        "__name__ == '__main__' ka asal matlab",
+        "Apna module + package (__init__.py) banao aur use karo",
+        "pip, requirements.txt, aur standard project layout; PRACTICE: exercises"
+      ],
+      "deliverable": "Multi-file package jo chalta ho",
+      "ref": "0.1"
+    },
+    {
+      "id": "PY06",
+      "title": "Files, paths, JSON aur environment",
+      "hours": 2,
+      "objectives": [
+        "File I/O safely",
+        "JSON aur .env — roz ka kaam"
+      ],
+      "tasks": [
+        "open() + with statement (context manager) + encoding='utf-8'",
+        "pathlib: Path, /, exists, mkdir, glob, read_text",
+        "json loads/dumps/load/dump + ensure_ascii + default=",
+        "os.getenv + python-dotenv; PRACTICE: D01 ke EX5/EX6 bhi complete karo"
+      ],
+      "deliverable": "PY06 practice + D01 exercises green",
+      "ref": "0.1"
+    },
+    {
+      "id": "PY07",
+      "title": "Errors aur exceptions",
+      "hours": 2,
+      "objectives": [
+        "Traceback parhna",
+        "Errors ko sahi tarah handle karna"
+      ],
+      "tasks": [
+        "try/except/else/finally, multiple except, exception hierarchy",
+        "raise, custom exception class, exception chaining (raise ... from)",
+        "Traceback ko neeche se upar parhna — asli line dhoondna",
+        "Anti-pattern: bare except aur silent pass; PRACTICE: exercises"
+      ],
+      "deliverable": "PY07 practice — sab tests green",
+      "ref": "0.1"
+    },
+    {
+      "id": "PY08",
+      "title": "OOP: classes, dataclass, properties",
+      "hours": 2,
+      "objectives": [
+        "Class banana aur use karna",
+        "dataclass aur Pydantic ka farq"
+      ],
+      "tasks": [
+        "__init__, self, instance vs class attributes, methods",
+        "__str__/__repr__/__eq__, @property, @staticmethod, @classmethod",
+        "Inheritance + super(), aur composition kab behtar hai",
+        "@dataclass; Pydantic ka taaruf (validation ke liye); PRACTICE: exercises"
+      ],
+      "deliverable": "PY08 practice — sab tests green",
+      "ref": "0.1"
+    },
+    {
+      "id": "PY09",
+      "title": "Iterators aur generators (streaming ki bunyad)",
+      "hours": 2,
+      "objectives": [
+        "yield kya karta hai",
+        "Lazy evaluation — LLM streaming isi par chalti hai"
+      ],
+      "tasks": [
+        "Iterable vs iterator, for loop andar se kaise chalta hai",
+        "yield se generator function, generator expression ( ) vs [ ]",
+        "Memory ka farq: badi file line-by-line vs poori list me",
+        "Generator se ek fake token stream banao; PRACTICE: exercises"
+      ],
+      "deliverable": "Generator-based fake LLM stream",
+      "ref": "0.1 / 1.2"
+    },
+    {
+      "id": "PY10",
+      "title": "Async Python (asyncio)",
+      "hours": 2,
+      "objectives": [
+        "async/await Python me — Dart se farq",
+        "Concurrent calls"
+      ],
+      "tasks": [
+        "async def, await, coroutine vs Future, asyncio.run",
+        "asyncio.gather (Dart Future.wait) se parallel calls",
+        "async for, async with, aur async generator (streaming ke liye)",
+        "Blocking code async ko kaise tabah karta hai; PRACTICE: exercises"
+      ],
+      "deliverable": "PY10 practice — concurrent async script",
+      "ref": "0.1 / 0.2"
+    },
+    {
+      "id": "PY11",
+      "title": "Typing, stdlib aur Pythonic idioms",
+      "hours": 2,
+      "objectives": [
+        "Type hints theek se",
+        "Woh stdlib jo roz chahiye"
+      ],
+      "tasks": [
+        "typing: list[str], dict[str, Any], Optional, Union (|), Literal, TypedDict",
+        "datetime + timezone, uuid, logging (print ki jagah)",
+        "enumerate/zip/any/all/sorted(key=)/max(key=) patterns",
+        "PEP 8 + Ruff se apna purana code saaf karo; PRACTICE: exercises"
+      ],
+      "deliverable": "PY11 practice + Ruff-clean code",
+      "ref": "0.1"
+    },
+    {
+      "id": "PY12",
+      "title": "Doosron ka Python code parhna (asli imtihan)",
+      "hours": 2,
+      "objectives": [
+        "Anjaan codebase khol kar samajhna",
+        "Debugger se code ka behaviour dekhna"
+      ],
+      "tasks": [
+        "Is repo ka scripts/track.py line-by-line parho aur uska flow likho",
+        "VS Code debugger: breakpoint, F5, F10, F11, variables panel",
+        "track.py me ek chhota feature khud add karo (e.g. 'streak' count)",
+        "Ek open-source Python repo kholo aur uska entry point dhoondo"
+      ],
+      "deliverable": "track.py me apna feature + code-reading note",
+      "ref": "0.1"
+    }
+  ]
+}

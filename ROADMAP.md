@@ -1,16 +1,16 @@
 # 📖 Day-by-Day Roadmap
 
-66 learning days · ~2 hours/day · 6 days/week · ≈11 weeks
+78 learning days · ~2 hours/day · 6 days/week · ≈13 weeks
 
 _Generated from `data/curriculum/` — edit those files, not this one._
 
 ---
 
-## Foundations
+## Setup
 
-`D01–D04` · roadmap ref `PHASE 0` · 0/4 done
+`D01–D01` · roadmap ref `PHASE 0` · 0/1 done
 
-> **Goal:** Python + API basics tak comfortable ho jana, taake LLM APIs se baat karna rukawat na bane.
+> **Goal:** Machine ready: Python, venv, VS Code aur repo workflow.
 
 ### D01 — Python setup + syntax (Dart se mapping)
 
@@ -31,6 +31,238 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 **Deliverable:** Dart-vs-Python cheatsheet note
 
 **Notes:** [D01-python-setup.md](notes/daily/D01-python-setup.md), [TOOLING.md](notes/TOOLING.md)
+
+---
+
+## Python Core (scratch se)
+
+`PY01–PY12` · roadmap ref `PHASE 0.1 — expanded` · 0/12 done
+
+> **Goal:** Python zero se poori tarah — sirf itna jitna is safar me chahiye, lekin woh mazbooti se. Maqsad: kisi bhi maujooda Python file ko khol kar samajh lena.
+
+### PY01 — Syntax, variables, types aur strings
+
+⬜ **Pending** · 2h · ref `0.1`
+
+**Objectives**
+
+- Python ka syntax model (indentation, no semicolons, no braces)
+- Types, type conversion aur f-strings
+
+**Tasks**
+
+- [ ] int/float/str/bool/None ke saath khelo, type() aur isinstance() use karo
+- [ ] String methods: upper, lower, strip, split, join, replace, startswith, in
+- [ ] f-string formatting: {value:.2f}, {value:,}, {value!r}, multi-line
+- [ ] PRACTICE: 8 exercises khud likho, check.py green karo
+
+**Deliverable:** PY01 practice — sab tests green
+
+### PY02 — Collections: list, tuple, dict, set
+
+⬜ **Pending** · 2h · ref `0.1`
+
+**Objectives**
+
+- Chaaron collections aur unka sahi istemal
+- Indexing, slicing aur mutation
+
+**Tasks**
+
+- [ ] list: append/extend/insert/remove/pop/sort/reverse + slicing [a:b:c]
+- [ ] dict: get/keys/values/items/update/pop + nested access
+- [ ] set: add/remove/union/intersection + duplicates hatana
+- [ ] tuple: immutability, unpacking, swap; PRACTICE: exercises green karo
+
+**Deliverable:** PY02 practice — sab tests green
+
+### PY03 — Control flow: if, loops, comprehensions
+
+⬜ **Pending** · 2h · ref `0.1`
+
+**Objectives**
+
+- Conditions aur loops Python ke tareeqe se
+- Comprehensions — Python ka signature idiom
+
+**Tasks**
+
+- [ ] if/elif/else, truthy-falsy values, ternary, match statement
+- [ ] for + range/enumerate/zip, while, break/continue/else
+- [ ] List/dict/set comprehensions, nested aur conditional
+- [ ] PRACTICE: exercises green karo
+
+**Deliverable:** PY03 practice — sab tests green
+
+### PY04 — Functions poori tarah
+
+⬜ **Pending** · 2h · ref `0.1`
+
+**Objectives**
+
+- Parameters ki saari qismein
+- Scope, closures aur lambda
+
+**Tasks**
+
+- [ ] positional, default, keyword-only, *args, **kwargs
+- [ ] Multiple return values (tuple unpacking), type hints
+- [ ] Scope: local/global, aur mutable default argument ka mashhoor bug
+- [ ] lambda, map/filter vs comprehension; PRACTICE: exercises green karo
+
+**Deliverable:** PY04 practice — sab tests green
+
+### PY05 — Modules, imports aur project structure
+
+⬜ **Pending** · 2h · ref `0.1`
+
+**Objectives**
+
+- Code ko multiple files me todna
+- import system samajhna
+
+**Tasks**
+
+- [ ] import x / from x import y / as alias, aur circular import ka masla
+- [ ] __name__ == '__main__' ka asal matlab
+- [ ] Apna module + package (__init__.py) banao aur use karo
+- [ ] pip, requirements.txt, aur standard project layout; PRACTICE: exercises
+
+**Deliverable:** Multi-file package jo chalta ho
+
+### PY06 — Files, paths, JSON aur environment
+
+⬜ **Pending** · 2h · ref `0.1`
+
+**Objectives**
+
+- File I/O safely
+- JSON aur .env — roz ka kaam
+
+**Tasks**
+
+- [ ] open() + with statement (context manager) + encoding='utf-8'
+- [ ] pathlib: Path, /, exists, mkdir, glob, read_text
+- [ ] json loads/dumps/load/dump + ensure_ascii + default=
+- [ ] os.getenv + python-dotenv; PRACTICE: D01 ke EX5/EX6 bhi complete karo
+
+**Deliverable:** PY06 practice + D01 exercises green
+
+### PY07 — Errors aur exceptions
+
+⬜ **Pending** · 2h · ref `0.1`
+
+**Objectives**
+
+- Traceback parhna
+- Errors ko sahi tarah handle karna
+
+**Tasks**
+
+- [ ] try/except/else/finally, multiple except, exception hierarchy
+- [ ] raise, custom exception class, exception chaining (raise ... from)
+- [ ] Traceback ko neeche se upar parhna — asli line dhoondna
+- [ ] Anti-pattern: bare except aur silent pass; PRACTICE: exercises
+
+**Deliverable:** PY07 practice — sab tests green
+
+### PY08 — OOP: classes, dataclass, properties
+
+⬜ **Pending** · 2h · ref `0.1`
+
+**Objectives**
+
+- Class banana aur use karna
+- dataclass aur Pydantic ka farq
+
+**Tasks**
+
+- [ ] __init__, self, instance vs class attributes, methods
+- [ ] __str__/__repr__/__eq__, @property, @staticmethod, @classmethod
+- [ ] Inheritance + super(), aur composition kab behtar hai
+- [ ] @dataclass; Pydantic ka taaruf (validation ke liye); PRACTICE: exercises
+
+**Deliverable:** PY08 practice — sab tests green
+
+### PY09 — Iterators aur generators (streaming ki bunyad)
+
+⬜ **Pending** · 2h · ref `0.1 / 1.2`
+
+**Objectives**
+
+- yield kya karta hai
+- Lazy evaluation — LLM streaming isi par chalti hai
+
+**Tasks**
+
+- [ ] Iterable vs iterator, for loop andar se kaise chalta hai
+- [ ] yield se generator function, generator expression ( ) vs [ ]
+- [ ] Memory ka farq: badi file line-by-line vs poori list me
+- [ ] Generator se ek fake token stream banao; PRACTICE: exercises
+
+**Deliverable:** Generator-based fake LLM stream
+
+### PY10 — Async Python (asyncio)
+
+⬜ **Pending** · 2h · ref `0.1 / 0.2`
+
+**Objectives**
+
+- async/await Python me — Dart se farq
+- Concurrent calls
+
+**Tasks**
+
+- [ ] async def, await, coroutine vs Future, asyncio.run
+- [ ] asyncio.gather (Dart Future.wait) se parallel calls
+- [ ] async for, async with, aur async generator (streaming ke liye)
+- [ ] Blocking code async ko kaise tabah karta hai; PRACTICE: exercises
+
+**Deliverable:** PY10 practice — concurrent async script
+
+### PY11 — Typing, stdlib aur Pythonic idioms
+
+⬜ **Pending** · 2h · ref `0.1`
+
+**Objectives**
+
+- Type hints theek se
+- Woh stdlib jo roz chahiye
+
+**Tasks**
+
+- [ ] typing: list[str], dict[str, Any], Optional, Union (|), Literal, TypedDict
+- [ ] datetime + timezone, uuid, logging (print ki jagah)
+- [ ] enumerate/zip/any/all/sorted(key=)/max(key=) patterns
+- [ ] PEP 8 + Ruff se apna purana code saaf karo; PRACTICE: exercises
+
+**Deliverable:** PY11 practice + Ruff-clean code
+
+### PY12 — Doosron ka Python code parhna (asli imtihan)
+
+⬜ **Pending** · 2h · ref `0.1`
+
+**Objectives**
+
+- Anjaan codebase khol kar samajhna
+- Debugger se code ka behaviour dekhna
+
+**Tasks**
+
+- [ ] Is repo ka scripts/track.py line-by-line parho aur uska flow likho
+- [ ] VS Code debugger: breakpoint, F5, F10, F11, variables panel
+- [ ] track.py me ek chhota feature khud add karo (e.g. 'streak' count)
+- [ ] Ek open-source Python repo kholo aur uska entry point dhoondo
+
+**Deliverable:** track.py me apna feature + code-reading note
+
+---
+
+## API Foundations (Python me)
+
+`D02–D04` · roadmap ref `PHASE 0.1 / 0.2` · 0/3 done
+
+> **Goal:** Python core ko asli kaam par lagana: async HTTP, FastAPI, aur SSE streaming - LLM APIs se pehle ka aakhri padao.
 
 ### D02 — Python async + HTTP client
 

@@ -1,9 +1,9 @@
 {
   "block_id": "P0",
   "order": 1,
-  "title": "Foundations",
+  "title": "Setup",
   "roadmap_ref": "PHASE 0",
-  "goal": "Python + API basics tak comfortable ho jana, taake LLM APIs se baat karna rukawat na bane.",
+  "goal": "Machine ready: Python, venv, VS Code aur repo workflow.",
   "days": [
     {
       "id": "D01",
@@ -21,57 +21,6 @@
       ],
       "deliverable": "Dart-vs-Python cheatsheet note",
       "ref": "0.1"
-    },
-    {
-      "id": "D02",
-      "title": "Python async + HTTP client",
-      "hours": 2,
-      "objectives": [
-        "async/await Python me (Dart Future/async se compare)",
-        "httpx se REST calls aur error handling"
-      ],
-      "tasks": [
-        "asyncio.run + async def se 3 concurrent HTTP calls karo",
-        "httpx.AsyncClient use karke ek public API hit karo",
-        "Timeout aur exception handling add karo",
-        "Dart Future.wait vs asyncio.gather ka comparison note karo"
-      ],
-      "deliverable": "async_http_demo.py",
-      "ref": "0.1"
-    },
-    {
-      "id": "D03",
-      "title": "FastAPI basics + .env secrets",
-      "hours": 2,
-      "objectives": [
-        "FastAPI se chhota backend service khada karna",
-        "API keys ko .env me safely rakhna"
-      ],
-      "tasks": [
-        "pip install fastapi uvicorn python-dotenv",
-        "GET /health aur POST /echo endpoints banao (Pydantic model ke saath)",
-        ".env + os.getenv se dummy key load karo, .gitignore me .env daalo",
-        "uvicorn --reload se run karke curl se test karo"
-      ],
-      "deliverable": "Chalta hua FastAPI hello-service",
-      "ref": "0.1"
-    },
-    {
-      "id": "D04",
-      "title": "API refresher: streaming, retries, rate limits",
-      "hours": 2,
-      "objectives": [
-        "SSE (Server-Sent Events) kya hai aur LLM streaming me kyun zaroori hai",
-        "Exponential backoff aur rate limit handling"
-      ],
-      "tasks": [
-        "FastAPI me StreamingResponse se SSE endpoint banao jo 1 word/second bheje",
-        "Us endpoint ko Python client se stream karke consume karo",
-        "Exponential backoff retry helper likho (429/5xx par)",
-        "Auth types note karo: API key vs Bearer vs OAuth"
-      ],
-      "deliverable": "sse_demo (server + client) + retry helper",
-      "ref": "0.2"
     }
   ]
 }
