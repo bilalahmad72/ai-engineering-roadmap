@@ -3,14 +3,16 @@
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
     "started": "2026-09-06",
-    "updated": "2026-09-06 11:51 UTC"
+    "updated": "2026-09-06 11:53 UTC"
   },
   "days": {
     "D01": {
       "status": "running",
       "started": "2026-09-06",
       "completed": null,
-      "tasks_done": [],
+      "tasks_done": [
+        0
+      ],
       "notes": [
         "notes/daily/D01-python-setup.md"
       ],
@@ -30,6 +32,14 @@
         {
           "at": "2026-09-06 11:51 UTC",
           "text": "venv created + activated (PowerShell, no execution-policy issue)"
+        },
+        {
+          "at": "2026-09-06 11:53 UTC",
+          "text": "Checked task 1"
+        },
+        {
+          "at": "2026-09-06 11:53 UTC",
+          "text": "httpx 0.28.1 installed in venv (+6 transitive deps); venv isolation verified via sys.executable"
         }
       ]
     },

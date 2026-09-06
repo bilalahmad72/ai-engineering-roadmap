@@ -45,6 +45,10 @@ Python interpreter aur apne packages hote hain.
 
 **Asool:** naye Python project ka pehla command hamesha `python -m venv .venv` hai.
 
+**Isolation ka live proof:** global pip 26.2 tha, lekin venv ke andar pip 26.1.2
+nikla — venv apna alag pip bundle karta hai. Yani venv sirf packages nahi,
+poora tooling isolate karta hai.
+
 ```powershell
 python -m venv .venv          # banao (sirf ek dafa)
 .\.venv\Scripts\Activate.ps1  # PowerShell me activate (har naye terminal me)
