@@ -55,6 +55,25 @@ Naye days automatically `pending` state ke saath `progress.json` me aa jate hain
 (purani progress safe rehti hai). Day IDs (`D01`…`D66`) **kabhi reuse mat karo** —
 notes aur log unhi se linked hain.
 
+## Teaching method (sabse zaroori rule)
+
+**Kabhi bhi mukammal working script likh kar mat do jo Bilal sirf chala kar
+output paste kare.** Ye passive hai — samajh aa jata hai, yaad kuch nahi rehta.
+
+Har topic ka loop:
+
+1. **Concept — 5 minute max.** Sirf idea + Flutter/Dart/Postgres analogy. Code nahi.
+2. **Spec do.** Kya banana hai, input kya, output kya aana chahiye. **Solution nahi.**
+3. **Bilal khaali file par khud likhe.** Yehi asli learning step hai.
+4. **Uske code ka review.** Kya theek, kya behtar ho sakta tha, aur **kyun**.
+5. **Recall check.** Agle session me bina file dekhe 2-3 sawal.
+
+Solution tabhi likho jab woh khud koshish kar chuke hon, ya explicitly maangein
+("bata do"). Error aana **acchi baat hai** — usay `notes/ISSUES.md` me record karo.
+
+Reference code (jo maine likha) sirf tab jab woh apna version likh chuke hon —
+comparison ke liye, shuru me nahi.
+
 ## Zabaan
 
 User Roman Urdu me baat karta hai. Jawab Roman Urdu me, technical terms English me.

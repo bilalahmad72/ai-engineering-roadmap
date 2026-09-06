@@ -3,7 +3,7 @@
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
     "started": "2026-09-06",
-    "updated": "2026-09-06 11:59 UTC"
+    "updated": "2026-09-06 12:06 UTC"
   },
   "days": {
     "D01": {
@@ -49,6 +49,10 @@
         {
           "at": "2026-09-06 11:59 UTC",
           "text": "dart_to_python.py chalaya - 6 sections verified; 3 traps documented (type hints, or-vs-??, coroutine)"
+        },
+        {
+          "at": "2026-09-06 12:06 UTC",
+          "text": "Method change: ready-made scripts se practice-first par shift. Demo scripts reference/ me move, practice/ me 6 exercises + auto-checker"
         }
       ]
     },
