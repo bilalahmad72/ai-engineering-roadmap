@@ -58,7 +58,7 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 
 **Deliverable:** PY01 practice — sab tests green
 
-**Notes:** [PY01-syntax-types.md](notes/daily/PY01-syntax-types.md)
+**Notes:** [PY01-syntax-types.md](notes/daily/PY01-syntax-types.md), [ISSUES.md](notes/ISSUES.md)
 
 ### PY02 — Collections: list, tuple, dict, set
 

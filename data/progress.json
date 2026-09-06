@@ -3,7 +3,7 @@
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
     "started": "2026-09-06",
-    "updated": "2026-09-06 13:08 UTC"
+    "updated": "2026-09-06 13:11 UTC"
   },
   "days": {
     "D01": {
@@ -597,7 +597,8 @@
         0
       ],
       "notes": [
-        "notes/daily/PY01-syntax-types.md"
+        "notes/daily/PY01-syntax-types.md",
+        "notes/ISSUES.md"
       ],
       "log": [
         {
@@ -623,6 +624,14 @@
         {
           "at": "2026-09-06 13:08 UTC",
           "text": "Topic 1 (variables/types) done — format specs practiced"
+        },
+        {
+          "at": "2026-09-06 13:11 UTC",
+          "text": "Note added: notes/ISSUES.md"
+        },
+        {
+          "at": "2026-09-06 13:11 UTC",
+          "text": "ISS-001: wrong path when running file manually — fixed, use Run button"
         }
       ]
     },

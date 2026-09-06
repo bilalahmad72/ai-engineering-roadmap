@@ -2,7 +2,7 @@
 
 **0% complete** — 0/78 days, 3/312 tasks, 0h logged.
 
-Last updated: 2026-09-06 13:08 UTC
+Last updated: 2026-09-06 13:11 UTC
 
 ## Status breakdown
 
@@ -17,6 +17,8 @@ Last updated: 2026-09-06 13:08 UTC
 
 | When | Day | Topic | Event |
 |---|---|---|---|
+| 2026-09-06 13:11 UTC | `PY01` | Syntax, variables, types aur strings | Note added: notes/ISSUES.md |
+| 2026-09-06 13:11 UTC | `PY01` | Syntax, variables, types aur strings | ISS-001: wrong path when running file manually — fixed, use Run button |
 | 2026-09-06 13:08 UTC | `PY01` | Syntax, variables, types aur strings | Topic 1 (variables/types) done — format specs practiced |
 | 2026-09-06 13:08 UTC | `PY01` | Syntax, variables, types aur strings | Note added: notes/daily/PY01-syntax-types.md |
 | 2026-09-06 13:08 UTC | `PY01` | Syntax, variables, types aur strings | Checked task 1 |
