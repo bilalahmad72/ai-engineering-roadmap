@@ -3,7 +3,7 @@
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
     "started": "2026-09-06",
-    "updated": "2026-09-06 12:32 UTC"
+    "updated": "2026-09-06 12:33 UTC"
   },
   "days": {
     "D01": {
@@ -590,12 +590,21 @@
       "log": []
     },
     "PY01": {
-      "status": "pending",
-      "started": null,
+      "status": "running",
+      "started": "2026-09-06",
       "completed": null,
       "tasks_done": [],
       "notes": [],
-      "log": []
+      "log": [
+        {
+          "at": "2026-09-06 12:33 UTC",
+          "text": "Started"
+        },
+        {
+          "at": "2026-09-06 12:33 UTC",
+          "text": "Practice setup ready: 8 exercises, 29 assertions"
+        }
+      ]
     },
     "PY02": {
       "status": "pending",

@@ -42,7 +42,7 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 
 ### PY01 — Syntax, variables, types aur strings
 
-⬜ **Pending** · 2h · ref `0.1`
+🟡 **Running** · 2h · ref `0.1`
 
 **Objectives**
 

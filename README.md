@@ -14,14 +14,15 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 | **Hours logged** | 0 / 156 h |
 | **Pace** | ~2 hours/day, 6 days/week |
 | **Est. remaining** | ~13.0 weeks |
-| **Last updated** | 2026-09-06 12:28 UTC |
+| **Last updated** | 2026-09-06 12:33 UTC |
 
 ✅ Done &nbsp; 🟡 In progress &nbsp; ⬜ Pending &nbsp; ⏭️ Skipped
 
 ## 📍 Abhi kahan hoon
 
 - 🟡 **In progress:** `D01` — Python setup + syntax (Dart se mapping)  _( Setup )_
-- ⬜ **Next up:** `PY01` — Syntax, variables, types aur strings  _( Python Core (scratch se) )_
+- 🟡 **In progress:** `PY01` — Syntax, variables, types aur strings  _( Python Core (scratch se) )_
+- ⬜ **Next up:** `PY02` — Collections: list, tuple, dict, set  _( Python Core (scratch se) )_
 
 ---
 
@@ -30,7 +31,7 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 | # | Phase | Days | Progress | Status |
 |---|---|---|---|---|
 | 1 | **Setup** | `D01–D01` | `░░░░░░░░░░░░` 0% | 🟡 Running |
-| 2 | **Python Core (scratch se)** | `PY01–PY12` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
+| 2 | **Python Core (scratch se)** | `PY01–PY12` | `░░░░░░░░░░░░` 0% | 🟡 Running |
 | 3 | **API Foundations (Python me)** | `D02–D04` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
 | 4 | **LLM Fundamentals + API Integration** | `D05–D14` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
 | 5 | **Flutter + AI Integration (Client)** | `D15–D20` | `░░░░░░░░░░░░` 0% | ⬜ Pending |
@@ -57,14 +58,14 @@ _Click a phase to expand._
 
 </details>
 
-<details>
-<summary><b>⬜ Python Core (scratch se)</b> — 0/12 days (0%) · <code>PHASE 0.1 — expanded</code></summary>
+<details open>
+<summary><b>🟡 Python Core (scratch se)</b> — 0/12 days (0%) · <code>PHASE 0.1 — expanded</code></summary>
 
 > Python zero se poori tarah — sirf itna jitna is safar me chahiye, lekin woh mazbooti se. Maqsad: kisi bhi maujooda Python file ko khol kar samajh lena.
 
 | Day | Topic | Tasks | Status | Notes |
 |---|---|---|---|---|
-| `PY01` | [Syntax, variables, types aur strings](ROADMAP.md#py01-syntax-variables-types-aur-strings) | 0/4 | ⬜ | — |
+| `PY01` | [Syntax, variables, types aur strings](ROADMAP.md#py01-syntax-variables-types-aur-strings) | 0/4 | 🟡 | — |
 | `PY02` | [Collections: list, tuple, dict, set](ROADMAP.md#py02-collections-list-tuple-dict-set) | 0/4 | ⬜ | — |
 | `PY03` | [Control flow: if, loops, comprehensions](ROADMAP.md#py03-control-flow-if-loops-comprehensions) | 0/4 | ⬜ | — |
 | `PY04` | [Functions poori tarah](ROADMAP.md#py04-functions-poori-tarah) | 0/4 | ⬜ | — |

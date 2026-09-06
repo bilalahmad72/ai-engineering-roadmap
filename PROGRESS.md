@@ -2,14 +2,14 @@
 
 **0% complete** — 0/78 days, 2/312 tasks, 0h logged.
 
-Last updated: 2026-09-06 12:28 UTC
+Last updated: 2026-09-06 12:33 UTC
 
 ## Status breakdown
 
 | Status | Days |
 |---|---|
-| ⬜ Pending | 77 |
-| 🟡 Running | 1 |
+| ⬜ Pending | 76 |
+| 🟡 Running | 2 |
 | ✅ Done | 0 |
 | ⏭️ Skipped | 0 |
 
@@ -17,6 +17,8 @@ Last updated: 2026-09-06 12:28 UTC
 
 | When | Day | Topic | Event |
 |---|---|---|---|
+| 2026-09-06 12:33 UTC | `PY01` | Syntax, variables, types aur strings | Started |
+| 2026-09-06 12:33 UTC | `PY01` | Syntax, variables, types aur strings | Practice setup ready: 8 exercises, 29 assertions |
 | 2026-09-06 12:28 UTC | `D01` | Python setup + syntax (Dart se mapping) | VS Code Python setup complete: extension + interpreter (.venv) selected + first file created/run |
 | 2026-09-06 12:28 UTC | `D01` | Python setup + syntax (Dart se mapping) | Note added: notes/TOOLING.md |
 | 2026-09-06 12:13 UTC | `D01` | Python setup + syntax (Dart se mapping) | VS Code detected (33 extensions, Flutter setup present, Python extension MISSING). TOOLING.md added. |
