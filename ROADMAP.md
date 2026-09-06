@@ -30,7 +30,7 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 
 **Deliverable:** Dart-vs-Python cheatsheet note
 
-**Notes:** [D01-python-setup.md](notes/daily/D01-python-setup.md)
+**Notes:** [D01-python-setup.md](notes/daily/D01-python-setup.md), [TOOLING.md](notes/TOOLING.md)
 
 ### D02 — Python async + HTTP client
 

@@ -14,7 +14,7 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 | **Hours logged** | 0 / 132 h |
 | **Pace** | ~2 hours/day, 6 days/week |
 | **Est. remaining** | ~11.0 weeks |
-| **Last updated** | 2026-09-06 12:06 UTC |
+| **Last updated** | 2026-09-06 12:28 UTC |
 
 ✅ Done &nbsp; 🟡 In progress &nbsp; ⬜ Pending &nbsp; ⏭️ Skipped
 
@@ -51,7 +51,7 @@ _Click a phase to expand._
 
 | Day | Topic | Tasks | Status | Notes |
 |---|---|---|---|---|
-| `D01` | [Python setup + syntax (Dart se mapping)](ROADMAP.md#d01-python-setup-syntax-dart-se-mapping) | 2/4 | 🟡 | [📝](notes/daily/D01-python-setup.md) |
+| `D01` | [Python setup + syntax (Dart se mapping)](ROADMAP.md#d01-python-setup-syntax-dart-se-mapping) | 2/4 | 🟡 | [📝](notes/daily/D01-python-setup.md) [📝](notes/TOOLING.md) |
 | `D02` | [Python async + HTTP client](ROADMAP.md#d02-python-async-http-client) | 0/4 | ⬜ | — |
 | `D03` | [FastAPI basics + .env secrets](ROADMAP.md#d03-fastapi-basics-env-secrets) | 0/4 | ⬜ | — |
 | `D04` | [API refresher: streaming, retries, rate limits](ROADMAP.md#d04-api-refresher-streaming-retries-rate-limits) | 0/4 | ⬜ | — |

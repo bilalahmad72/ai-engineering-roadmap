@@ -116,10 +116,39 @@ khud generate karta hai. Data models ke liye default choice yehi honi chahiye.
 | `{String greeting = 'Hello'}` | `greeting: str = "Hello"` |
 | named args ke liye `{}` zaroori | koi bhi param named ban sakta hai |
 
+### VS Code Python setup (ho gaya ✅)
+
+Poori guide: [TOOLING.md](../TOOLING.md). Yahan sirf ahem baatein:
+
+| Step | Kya kiya |
+|---|---|
+| Extension | `ms-python.python` (Microsoft) — isi ke saath Pylance + debugger aata hai |
+| Interpreter | `Ctrl+Shift+P` → `Python: Select Interpreter` → `.venv` wala chuna |
+| File banana | Explorer me right-click → New File → naam **`.py`** ke saath |
+| Chalana | Upar dayein ▶️ play button, ya terminal me `python file.py` |
+
+**Interpreter selection — Dart me iska koi equivalent nahi.**
+System par do Python hote hain: global aur project ka `.venv`. Terminal me venv
+activate hone se **VS Code ka editor apne aap nahi jaan jata** — usay alag se
+batana parta hai. Na bataya jaye to `import httpx` par red squiggly aati rehti
+hai halaanke code bilkul chalta hai. Ye Python ka sabse aam waqt-zaya karne wala
+confusion hai.
+
+**Check:** bottom-right status bar me `('.venv': venv)` likha hona chahiye.
+
+**Flutter ki jo aadat yahan nahi chalegi:** hot reload. Python me har tabdeeli ke
+baad `Ctrl+S` phir dobara run — warna purana output hi aata rahega.
+
 ## Code
 
-- [`dart_to_python.py`](../../learning/phase-0-foundations/D01-python-setup/dart_to_python.py)
-  — 6 sections, chala kar verify kiya gaya
+- [`practice/exercises.py`](../../learning/phase-0-foundations/D01-python-setup/practice/exercises.py)
+  — khud likha hua (asli practice)
+- [`practice/check.py`](../../learning/phase-0-foundations/D01-python-setup/practice/check.py)
+  — auto-checker, foran pass/fail batata hai
+- [`reference/dart_to_python.py`](../../learning/phase-0-foundations/D01-python-setup/reference/dart_to_python.py)
+  — demo (practice ke **baad** dekhne ke liye)
+- [`reference/json_basics.py`](../../learning/phase-0-foundations/D01-python-setup/reference/json_basics.py)
+  — demo
 
 ## Gotchas / jo phansa
 

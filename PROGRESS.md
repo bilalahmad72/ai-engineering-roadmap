@@ -2,7 +2,7 @@
 
 **0% complete** — 0/66 days, 2/264 tasks, 0h logged.
 
-Last updated: 2026-09-06 12:06 UTC
+Last updated: 2026-09-06 12:28 UTC
 
 ## Status breakdown
 
@@ -17,6 +17,8 @@ Last updated: 2026-09-06 12:06 UTC
 
 | When | Day | Topic | Event |
 |---|---|---|---|
+| 2026-09-06 12:28 UTC | `D01` | Python setup + syntax (Dart se mapping) | VS Code Python setup complete: extension + interpreter (.venv) selected + first file created/run |
+| 2026-09-06 12:28 UTC | `D01` | Python setup + syntax (Dart se mapping) | Note added: notes/TOOLING.md |
 | 2026-09-06 12:13 UTC | `D01` | Python setup + syntax (Dart se mapping) | VS Code detected (33 extensions, Flutter setup present, Python extension MISSING). TOOLING.md added. |
 | 2026-09-06 12:06 UTC | `D01` | Python setup + syntax (Dart se mapping) | Method change: ready-made scripts se practice-first par shift. Demo scripts reference/ me move, practice/ me 6 exercises + auto-checker |
 | 2026-09-06 11:59 UTC | `D01` | Python setup + syntax (Dart se mapping) | dart_to_python.py chalaya - 6 sections verified; 3 traps documented (type hints, or-vs-??, coroutine) |

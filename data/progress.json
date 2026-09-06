@@ -3,7 +3,7 @@
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
     "started": "2026-09-06",
-    "updated": "2026-09-06 12:13 UTC"
+    "updated": "2026-09-06 12:28 UTC"
   },
   "days": {
     "D01": {
@@ -15,7 +15,8 @@
         1
       ],
       "notes": [
-        "notes/daily/D01-python-setup.md"
+        "notes/daily/D01-python-setup.md",
+        "notes/TOOLING.md"
       ],
       "log": [
         {
@@ -57,6 +58,14 @@
         {
           "at": "2026-09-06 12:13 UTC",
           "text": "VS Code detected (33 extensions, Flutter setup present, Python extension MISSING). TOOLING.md added."
+        },
+        {
+          "at": "2026-09-06 12:28 UTC",
+          "text": "Note added: notes/TOOLING.md"
+        },
+        {
+          "at": "2026-09-06 12:28 UTC",
+          "text": "VS Code Python setup complete: extension + interpreter (.venv) selected + first file created/run"
         }
       ]
     },
