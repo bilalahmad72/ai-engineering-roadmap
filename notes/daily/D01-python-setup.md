@@ -28,7 +28,36 @@ _(din ke aakhir me bharna hai)_
 
 ## Concepts
 
-_(session ke saath bharta jayega)_
+### Virtual environment (venv) — aur ye Dart me kyun nahi hota
+
+Dart me har project ka dependency isolation **automatic** hai. Python me nahi —
+`pip install` by default sab kuch **globally** daal deta hai, is liye do projects
+jinhe ek hi package ki alag versions chahiye, aapas me collide kar jate hain.
+`venv` wahi isolation manually banata hai: ek folder jisme us project ka apna
+Python interpreter aur apne packages hote hain.
+
+| Flutter / Dart | Python |
+|---|---|
+| `pubspec.yaml` | `requirements.txt` |
+| `.dart_tool/` + pub cache | `.venv/` folder |
+| `dart pub add http` | `pip install httpx` |
+| `dart pub get` | `pip install -r requirements.txt` |
+
+**Asool:** naye Python project ka pehla command hamesha `python -m venv .venv` hai.
+
+```powershell
+python -m venv .venv          # banao (sirf ek dafa)
+.\.venv\Scripts\Activate.ps1  # PowerShell me activate (har naye terminal me)
+```
+
+Git Bash me activate: `source .venv/Scripts/activate`
+
+Activate hone ki nishani: prompt ke shuru me `(.venv)` aa jata hai. Har naya
+terminal kholne par dobara activate karna parta hai — venv "yaad" nahi rehta.
+
+`.venv/` folder **kabhi commit nahi hota** (`.gitignore` me hai). Repo me sirf
+`requirements.txt` jata hai, jisse koi bhi wahi environment dobara bana sake —
+bilkul `pubspec.yaml` ki tarah.
 
 ## Code
 
