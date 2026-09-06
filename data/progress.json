@@ -3,7 +3,7 @@
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
     "started": "2026-09-06",
-    "updated": "2026-09-06 12:49 UTC"
+    "updated": "2026-09-06 13:08 UTC"
   },
   "days": {
     "D01": {
@@ -593,8 +593,12 @@
       "status": "running",
       "started": "2026-09-06",
       "completed": null,
-      "tasks_done": [],
-      "notes": [],
+      "tasks_done": [
+        0
+      ],
+      "notes": [
+        "notes/daily/PY01-syntax-types.md"
+      ],
       "log": [
         {
           "at": "2026-09-06 12:33 UTC",
@@ -607,6 +611,18 @@
         {
           "at": "2026-09-06 12:49 UTC",
           "text": "Method: one-question-at-a-time tutoring. Topic -> note -> 5-6 use cases -> next topic"
+        },
+        {
+          "at": "2026-09-06 13:08 UTC",
+          "text": "Note added: notes/daily/PY01-syntax-types.md"
+        },
+        {
+          "at": "2026-09-06 13:08 UTC",
+          "text": "Checked task 1"
+        },
+        {
+          "at": "2026-09-06 13:08 UTC",
+          "text": "Topic 1 (variables/types) done — format specs practiced"
         }
       ]
     },

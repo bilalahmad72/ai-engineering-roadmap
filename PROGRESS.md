@@ -1,8 +1,8 @@
 # 📊 Progress Log
 
-**0% complete** — 0/78 days, 2/312 tasks, 0h logged.
+**0% complete** — 0/78 days, 3/312 tasks, 0h logged.
 
-Last updated: 2026-09-06 12:33 UTC
+Last updated: 2026-09-06 13:08 UTC
 
 ## Status breakdown
 
@@ -17,6 +17,9 @@ Last updated: 2026-09-06 12:33 UTC
 
 | When | Day | Topic | Event |
 |---|---|---|---|
+| 2026-09-06 13:08 UTC | `PY01` | Syntax, variables, types aur strings | Topic 1 (variables/types) done — format specs practiced |
+| 2026-09-06 13:08 UTC | `PY01` | Syntax, variables, types aur strings | Note added: notes/daily/PY01-syntax-types.md |
+| 2026-09-06 13:08 UTC | `PY01` | Syntax, variables, types aur strings | Checked task 1 |
 | 2026-09-06 12:49 UTC | `PY01` | Syntax, variables, types aur strings | Method: one-question-at-a-time tutoring. Topic -> note -> 5-6 use cases -> next topic |
 | 2026-09-06 12:33 UTC | `PY01` | Syntax, variables, types aur strings | Started |
 | 2026-09-06 12:33 UTC | `PY01` | Syntax, variables, types aur strings | Practice setup ready: 8 exercises, 29 assertions |
