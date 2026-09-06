@@ -17,6 +17,7 @@ Last updated: 2026-09-06 12:33 UTC
 
 | When | Day | Topic | Event |
 |---|---|---|---|
+| 2026-09-06 12:49 UTC | `PY01` | Syntax, variables, types aur strings | Method: one-question-at-a-time tutoring. Topic -> note -> 5-6 use cases -> next topic |
 | 2026-09-06 12:33 UTC | `PY01` | Syntax, variables, types aur strings | Started |
 | 2026-09-06 12:33 UTC | `PY01` | Syntax, variables, types aur strings | Practice setup ready: 8 exercises, 29 assertions |
 | 2026-09-06 12:28 UTC | `D01` | Python setup + syntax (Dart se mapping) | VS Code Python setup complete: extension + interpreter (.venv) selected + first file created/run |

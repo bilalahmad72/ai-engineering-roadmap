@@ -3,7 +3,7 @@
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
     "started": "2026-09-06",
-    "updated": "2026-09-06 12:33 UTC"
+    "updated": "2026-09-06 12:49 UTC"
   },
   "days": {
     "D01": {
@@ -603,6 +603,10 @@
         {
           "at": "2026-09-06 12:33 UTC",
           "text": "Practice setup ready: 8 exercises, 29 assertions"
+        },
+        {
+          "at": "2026-09-06 12:49 UTC",
+          "text": "Method: one-question-at-a-time tutoring. Topic -> note -> 5-6 use cases -> next topic"
         }
       ]
     },

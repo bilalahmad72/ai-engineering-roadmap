@@ -60,13 +60,26 @@ notes aur log unhi se linked hain.
 **Kabhi bhi mukammal working script likh kar mat do jo Bilal sirf chala kar
 output paste kare.** Ye passive hai — samajh aa jata hai, yaad kuch nahi rehta.
 
-Har topic ka loop:
+Har chhote topic ka loop (classic tutoring, purane andaz me):
 
-1. **Concept — 5 minute max.** Sirf idea + Flutter/Dart/Postgres analogy. Code nahi.
-2. **Spec do.** Kya banana hai, input kya, output kya aana chahiye. **Solution nahi.**
-3. **Bilal khaali file par khud likhe.** Yehi asli learning step hai.
-4. **Uske code ka review.** Kya theek, kya behtar ho sakta tha, aur **kyun**.
-5. **Recall check.** Agle session me bina file dekhe 2-3 sawal.
+1. **Concept parhao** — chhota, misalon ke saath, Flutter/Dart analogy ke saath.
+2. **Note karo** — `notes/daily/` me foran save, taake record bane.
+3. **5-6 use cases** — grip banane ke liye. Lekin **EK WAQT ME EK SAWAL**.
+4. **Woh code + output bhejte hain** → review (kya theek, kya behtar, **kyun**)
+   → phir **agla** sawal.
+5. Topic par grip ban jaye to agla topic.
+
+### 🔴 EK SAWAL EK BAAR
+
+Exercises ki poori list ek saath **mat** do. Ek file me 8 TODO functions dump
+karna Bilal ke liye kaam nahi karta — woh overwhelm ho jate hain aur pata nahi
+chalta ke seekh kya rahe hain. Ek sawal → jawab → review → agla sawal.
+
+Solution tabhi likho jab woh khud koshish kar chuke hon, ya explicitly maangein
+("bata do"). Error aana **acchi baat hai** — usay `notes/ISSUES.md` me record karo.
+
+Tracker (`scripts/track.py`) sirf **peeche peeche** record karta rahe — usay
+beech me la kar flow mat toro.
 
 Solution tabhi likho jab woh khud koshish kar chuke hon, ya explicitly maangein
 ("bata do"). Error aana **acchi baat hai** — usay `notes/ISSUES.md` me record karo.
