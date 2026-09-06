@@ -1,0 +1,247 @@
+{
+  "block_id": "P3",
+  "order": 5,
+  "title": "AI Agents & Tool Use",
+  "roadmap_ref": "PHASE 3",
+  "goal": "Agent = LLM + tools + loop + memory. MCP tum already daily use karte ho - yahan usay formalize karna hai.",
+  "days": [
+    {
+      "id": "D35",
+      "title": "Agent actually kya hai",
+      "hours": 2,
+      "objectives": [
+        "Agent vs chatbot vs workflow ka farq",
+        "Loop, tools, memory, termination"
+      ],
+      "tasks": [
+        "Agent ki definition apne lafzon me likho: LLM + tools + loop + memory",
+        "Claude Code khud kaise agent hai, uska breakdown likho",
+        "3 real use cases likho jo tum Fiverr par bech sakte ho",
+        "Agent loop ka pseudocode likho (stop condition ke saath)"
+      ],
+      "deliverable": "Agent concepts note",
+      "ref": "3.2"
+    },
+    {
+      "id": "D36",
+      "title": "Tool schemas deep dive",
+      "hours": 2,
+      "objectives": [
+        "Accha tool schema kaise likhein",
+        "Description hi asli prompt hai"
+      ],
+      "tasks": [
+        "5 tools ke JSON schemas likho (search, read_file, send_email, db_query, calculator)",
+        "Required vs optional params, enums, nested objects use karo",
+        "Buri vs achi tool description ka A/B test karo",
+        "Dekho model galat schema par kaise fail hota hai"
+      ],
+      "deliverable": "tools/ schema library",
+      "ref": "3.1"
+    },
+    {
+      "id": "D37",
+      "title": "Raw agent loop (bina framework)",
+      "hours": 2,
+      "objectives": [
+        "Poora agent loop khud likhna",
+        "Fundamentals framework se pehle"
+      ],
+      "tasks": [
+        "while loop: call model -> agar tool_use hai to chalao -> result wapas -> repeat",
+        "Max iterations limit lagao (infinite loop se bachne ke liye)",
+        "Conversation history properly maintain karo",
+        "Har step log karo taake debugging aasan ho"
+      ],
+      "deliverable": "agent.py (raw loop, ~100 lines)",
+      "ref": "3.2 / 3.4"
+    },
+    {
+      "id": "D38",
+      "title": "Multi-step aur parallel tool calls",
+      "hours": 2,
+      "objectives": [
+        "Ek turn me multiple tools",
+        "Sequential vs parallel execution"
+      ],
+      "tasks": [
+        "Aisa task do jisme 3 tools chahiye (multi-step chain)",
+        "Parallel tool calls handle karo (asyncio.gather)",
+        "Tool failure handle karo (error result wapas model ko do)",
+        "Tool call sequence visualize/log karo"
+      ],
+      "deliverable": "Multi-tool agent",
+      "ref": "3.1"
+    },
+    {
+      "id": "D39",
+      "title": "ReAct pattern",
+      "hours": 2,
+      "objectives": [
+        "Reason + Act loop",
+        "Thinking traces ka faida"
+      ],
+      "tasks": [
+        "ReAct prompt likho: Thought -> Action -> Observation",
+        "Apne raw agent ko ReAct style me convert karo",
+        "Extended thinking / reasoning models se compare karo",
+        "Note: kab ReAct zaroori hai aur kab overkill"
+      ],
+      "deliverable": "react_agent.py",
+      "ref": "3.2"
+    },
+    {
+      "id": "D40",
+      "title": "Short-term memory + context management",
+      "hours": 2,
+      "objectives": [
+        "Conversation history ko context window me fit rakhna",
+        "Summarization aur trimming"
+      ],
+      "tasks": [
+        "Sliding window trimming implement karo",
+        "Purani history ka summary bana kar replace karo",
+        "Token budget tracker banao",
+        "Long conversation par test karo, cost measure karo"
+      ],
+      "deliverable": "memory/short_term.py",
+      "ref": "3.2 / 5.1"
+    },
+    {
+      "id": "D41",
+      "title": "Long-term memory (vector DB)",
+      "hours": 2,
+      "objectives": [
+        "Persistent memory RAG ke through",
+        "Kya yaad rakhna hai aur kya nahi"
+      ],
+      "tasks": [
+        "Phase 2 wala pgvector reuse karke memory store banao",
+        "Agent ko save_memory aur recall_memory tools do",
+        "Facts extract karke store karo (poori chat nahi)",
+        "Nayi session me recall test karo"
+      ],
+      "deliverable": "memory/long_term.py",
+      "ref": "3.2"
+    },
+    {
+      "id": "D42",
+      "title": "Planning & task decomposition",
+      "hours": 2,
+      "objectives": [
+        "Bara goal chhote steps me todna",
+        "Plan-then-execute pattern"
+      ],
+      "tasks": [
+        "Planner prompt banao jo task ko steps me tode",
+        "Steps ko execute karke progress track karo",
+        "Re-planning add karo jab koi step fail ho",
+        "Single-agent vs orchestrator+subagents ka concept note karo"
+      ],
+      "deliverable": "planner_agent.py",
+      "ref": "3.2"
+    },
+    {
+      "id": "D43",
+      "title": "Guardrails & validation",
+      "hours": 2,
+      "objectives": [
+        "Agent ko galat kaam se rokna",
+        "Input/output validation layers"
+      ],
+      "tasks": [
+        "Tool-level permission checks lagao (kaunsa tool kis condition me chale)",
+        "Output validation: schema + business rules",
+        "Destructive actions ke liye allowlist/denylist",
+        "Deliberately galat instruction de kar guardrail test karo"
+      ],
+      "deliverable": "guardrails.py",
+      "ref": "3.2"
+    },
+    {
+      "id": "D44",
+      "title": "Human-in-the-loop approvals",
+      "hours": 2,
+      "objectives": [
+        "Approval step se pehle rukna",
+        "Resumable agent state"
+      ],
+      "tasks": [
+        "Risky tools ko 'requires_approval' mark karo",
+        "Agent ko pause karke approval maango, phir resume karo",
+        "Agent state serialize/deserialize karo (DB me save)",
+        "Claude Code ka permission prompt pattern study karke note karo"
+      ],
+      "deliverable": "Approval-gated agent",
+      "ref": "3.2"
+    },
+    {
+      "id": "D45",
+      "title": "MCP concepts",
+      "hours": 2,
+      "objectives": [
+        "MCP kyun exist karta hai",
+        "Server vs client, transports"
+      ],
+      "tasks": [
+        "MCP spec ka overview parho (tools, resources, prompts)",
+        "stdio vs HTTP/SSE transport ka farq note karo",
+        "Apne installed MCP servers ki list banao aur unke tools inspect karo",
+        "MCP vs plain function calling: kab kya use karein"
+      ],
+      "deliverable": "MCP concepts note",
+      "ref": "3.3"
+    },
+    {
+      "id": "D46",
+      "title": "Custom MCP server banao",
+      "hours": 2,
+      "objectives": [
+        "Apna MCP server likhna",
+        "Tools expose karna"
+      ],
+      "tasks": [
+        "MCP Python (ya TypeScript) SDK install karo",
+        "3 tools wala server banao (koi real kaam - e.g. is roadmap repo ka progress read/update)",
+        "Local me test karo MCP inspector se",
+        "Error handling + input validation add karo"
+      ],
+      "deliverable": "Custom MCP server",
+      "ref": "3.3"
+    },
+    {
+      "id": "D47",
+      "title": "MCP server ko client se jorna",
+      "hours": 2,
+      "objectives": [
+        "Real client me integrate karna",
+        "Debugging"
+      ],
+      "tasks": [
+        "Apna server Claude Code / Claude Desktop me register karo",
+        "Asli tasks par tools chala kar test karo",
+        "Logs dekh kar issues debug karo",
+        "Server ka README + usage docs likho"
+      ],
+      "deliverable": "Working MCP integration + docs",
+      "ref": "3.3"
+    },
+    {
+      "id": "D48",
+      "title": "Framework chuno + Phase 3 mini-project",
+      "hours": 2,
+      "objectives": [
+        "LangGraph / LlamaIndex / CrewAI ka comparison",
+        "Ek chuno, apna agent port karo"
+      ],
+      "tasks": [
+        "Teeno ka comparison table banao (learning curve, use case, community)",
+        "Ek framework choose karo aur reason likho",
+        "D37 wale raw agent ko us framework me port karo",
+        "MINI-PROJECT: real task automate karne wala agent (research -> draft -> format)"
+      ],
+      "deliverable": "Phase 3 mini-project: working agent",
+      "ref": "3.4"
+    }
+  ]
+}

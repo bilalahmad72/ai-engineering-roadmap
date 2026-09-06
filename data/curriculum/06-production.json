@@ -1,0 +1,77 @@
+{
+  "block_id": "P5",
+  "order": 7,
+  "title": "Production, Cost & Reliability",
+  "roadmap_ref": "PHASE 5",
+  "goal": "Jo cheezein client project ko professional banati hain: cost, evals, logging, security.",
+  "days": [
+    {
+      "id": "D53",
+      "title": "Cost management",
+      "hours": 2,
+      "objectives": [
+        "Request se pehle cost estimate",
+        "Model routing aur caching"
+      ],
+      "tasks": [
+        "Pre-flight token counting + cost estimator function likho",
+        "Router banao: simple task -> chhota model, complex -> bara model",
+        "Prompt caching + response caching lagao",
+        "Ek week ka projected cost calculate karo apne demo app ke liye"
+      ],
+      "deliverable": "cost_utils.py + routing logic",
+      "ref": "5.1"
+    },
+    {
+      "id": "D54",
+      "title": "Evaluation basics",
+      "hours": 2,
+      "objectives": [
+        "Prompt/RAG kaam kar raha hai ya nahi, measure karna",
+        "Regression testing"
+      ],
+      "tasks": [
+        "20 cases ka eval set banao (input + expected behaviour)",
+        "Automated eval runner likho (LLM-as-judge ya rule based)",
+        "Prompt change karke score ka farq dekho",
+        "CI style script: prompt change par evals chalein"
+      ],
+      "deliverable": "evals/ folder + runner",
+      "ref": "5.2"
+    },
+    {
+      "id": "D55",
+      "title": "Hallucination + logging/observability",
+      "hours": 2,
+      "objectives": [
+        "Hallucination kam karna",
+        "Debugging ke liye proper logs"
+      ],
+      "tasks": [
+        "Grounding + citations + 'nahi pata' instruction se hallucination kam karo",
+        "Structured logging: prompt, model, tokens, latency, cost, trace_id",
+        "Ek simple trace viewer banao (ya Langfuse/Helicone try karo)",
+        "Deliberately hallucination trigger karke detection test karo"
+      ],
+      "deliverable": "Logging layer + hallucination notes",
+      "ref": "5.2"
+    },
+    {
+      "id": "D56",
+      "title": "Security: injection, moderation, PII",
+      "hours": 2,
+      "objectives": [
+        "Prompt injection se bachna",
+        "Content moderation + PII handling"
+      ],
+      "tasks": [
+        "Apne RAG/agent par injection attacks try karo (document me hidden instructions)",
+        "Mitigation: untrusted content ko data ke tor par treat karna, tags me wrap karna",
+        "Moderation API se harmful input/output filter karo",
+        "PII detection/redaction add karo third-party API bhejne se pehle"
+      ],
+      "deliverable": "Security checklist + mitigations",
+      "ref": "5.3"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "block_id": "P6",
+  "order": 8,
+  "title": "Portfolio & Positioning",
+  "roadmap_ref": "PHASE 6",
+  "goal": "3 portfolio projects + case studies + Upwork/Fiverr launch. Yahi se paisa aata hai.",
+  "days": [
+    {
+      "id": "D57",
+      "title": "Project 1: AI Chat App - backend",
+      "hours": 2,
+      "objectives": [
+        "Scope lock karna",
+        "Backend + DB ready"
+      ],
+      "tasks": [
+        "Feature list finalize karo (scope creep se bacho)",
+        "Edge function proxy + chat schema deploy karo",
+        "Auth flow set karo",
+        "API contract document karo"
+      ],
+      "deliverable": "Project 1 backend live",
+      "ref": "6.1"
+    },
+    {
+      "id": "D58",
+      "title": "Project 1: Flutter streaming chat UI",
+      "hours": 2,
+      "objectives": [
+        "Phase 4A ke widgets reuse",
+        "Polished UX"
+      ],
+      "tasks": [
+        "Chat screen + streaming + markdown integrate karo",
+        "Conversation list + new chat + delete",
+        "Loading/error/empty states polish karo",
+        "Dark mode + responsive check"
+      ],
+      "deliverable": "Project 1 app working",
+      "ref": "6.1"
+    },
+    {
+      "id": "D59",
+      "title": "Project 1: history, polish, deploy",
+      "hours": 2,
+      "objectives": [
+        "Production ready banana",
+        "Demo ready banana"
+      ],
+      "tasks": [
+        "History persistence + pagination",
+        "Usage limits + error handling",
+        "Build release APK / web deploy",
+        "Screenshots + 60 second demo video record karo"
+      ],
+      "deliverable": "Project 1 shipped + demo",
+      "ref": "6.1 / 6.2"
+    },
+    {
+      "id": "D60",
+      "title": "Project 2: RAG Doc Q&A - ingestion",
+      "hours": 2,
+      "objectives": [
+        "PDF upload -> chunks -> embeddings",
+        "Supabase storage + pgvector"
+      ],
+      "tasks": [
+        "File upload endpoint + Supabase storage",
+        "Background ingestion job (parse -> chunk -> embed -> store)",
+        "Ingestion status tracking (pending/processing/ready/failed)",
+        "Bare documents par test karo"
+      ],
+      "deliverable": "Ingestion pipeline live",
+      "ref": "6.1"
+    },
+    {
+      "id": "D61",
+      "title": "Project 2: retrieval + citations API",
+      "hours": 2,
+      "objectives": [
+        "Hybrid search + cited answers",
+        "Streaming answers"
+      ],
+      "tasks": [
+        "Ask endpoint: hybrid retrieve -> rerank -> answer with citations",
+        "Answer streaming karo",
+        "Per-user document isolation verify karo",
+        "Eval set par quality check karo"
+      ],
+      "deliverable": "Q&A API with citations",
+      "ref": "6.1"
+    },
+    {
+      "id": "D62",
+      "title": "Project 2: Flutter frontend + demo",
+      "hours": 2,
+      "objectives": [
+        "Upload + ask UI",
+        "Citations dikhana"
+      ],
+      "tasks": [
+        "File picker + upload progress + ingestion status UI",
+        "Q&A screen with streaming answer",
+        "Citation chips jo source chunk kholein",
+        "Screenshots + demo video"
+      ],
+      "deliverable": "Project 2 shipped + demo",
+      "ref": "6.1 / 6.2"
+    },
+    {
+      "id": "D63",
+      "title": "Project 3: AI Agent demo - build",
+      "hours": 2,
+      "objectives": [
+        "Real task automate karna",
+        "Apne content pipeline se tie karna"
+      ],
+      "tasks": [
+        "Agent scope: topic -> research -> draft -> format output",
+        "Tools define + agent loop wire karo",
+        "Guardrails + approval step add karo",
+        "3 real topics par chala kar output quality dekho"
+      ],
+      "deliverable": "Agent v1 working",
+      "ref": "6.1"
+    },
+    {
+      "id": "D64",
+      "title": "Project 3: MCP integration + finish",
+      "hours": 2,
+      "objectives": [
+        "Apna MCP server plug karna",
+        "Presentable banana"
+      ],
+      "tasks": [
+        "D46 wala MCP server agent ke saath integrate karo",
+        "Simple UI ya CLI polish karo",
+        "README + architecture diagram",
+        "Demo video record karo"
+      ],
+      "deliverable": "Project 3 shipped + demo",
+      "ref": "6.1 / 6.2"
+    },
+    {
+      "id": "D65",
+      "title": "Case study write-ups",
+      "hours": 2,
+      "objectives": [
+        "Technical decisions document karna",
+        "Client-facing language me likhna"
+      ],
+      "tasks": [
+        "Har project ka case study: problem -> approach -> tech decisions -> result",
+        "Before/after aur metrics (latency, cost per query) daalo",
+        "Screenshots + video embed karo",
+        "GitHub repos public + README polish karo"
+      ],
+      "deliverable": "3 case studies published",
+      "ref": "6.2"
+    },
+    {
+      "id": "D66",
+      "title": "Upwork/Fiverr launch",
+      "hours": 2,
+      "objectives": [
+        "Profile positioning",
+        "Service packages + pricing"
+      ],
+      "tasks": [
+        "Headline: Flutter Developer | AI Integration Specialist (LLM, RAG, AI Agents)",
+        "3 gig packages banao: AI chatbot integration, RAG document search, AI agent automation",
+        "Pricing set karo ($20-35/hr start, portfolio ke saath scale)",
+        "Pehli 10 proposals bhejo / gigs publish karo"
+      ],
+      "deliverable": "Live profile + gigs",
+      "ref": "6.3"
+    }
+  ]
+}

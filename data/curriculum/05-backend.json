@@ -1,0 +1,77 @@
+{
+  "block_id": "P4B",
+  "order": 6,
+  "title": "Backend Architecture for AI Flutter Apps",
+  "roadmap_ref": "PHASE 4.3",
+  "goal": "Production-safe backend: API keys kabhi client me nahi, history Postgres me, usage control ke saath.",
+  "days": [
+    {
+      "id": "D49",
+      "title": "Proxy architecture + key security",
+      "hours": 2,
+      "objectives": [
+        "Client se direct LLM call kyun kabhi nahi",
+        "Thin proxy ka design"
+      ],
+      "tasks": [
+        "Demo karo: Flutter APK se hardcoded key kaise nikal sakti hai",
+        "Proxy architecture diagram banao (Flutter -> Auth -> Proxy -> LLM)",
+        "Auth strategy decide karo (Supabase JWT verify)",
+        "3 options compare karo: Supabase Edge Functions vs Firebase Functions vs FastAPI"
+      ],
+      "deliverable": "Backend architecture decision doc",
+      "ref": "4.3 / 5.3"
+    },
+    {
+      "id": "D50",
+      "title": "Supabase Edge Function LLM proxy",
+      "hours": 2,
+      "objectives": [
+        "Deno Edge Function me LLM call",
+        "Streaming pass-through"
+      ],
+      "tasks": [
+        "Supabase CLI setup + edge function scaffold",
+        "Environment secrets me API key rakho",
+        "LLM response ko client tak stream karo (ReadableStream)",
+        "Flutter app se end-to-end streaming test karo"
+      ],
+      "deliverable": "Deployed edge function proxy",
+      "ref": "4.3"
+    },
+    {
+      "id": "D51",
+      "title": "Conversation history schema",
+      "hours": 2,
+      "objectives": [
+        "Chat data model Postgres me",
+        "Efficient queries"
+      ],
+      "tasks": [
+        "Tables: conversations, messages (role, content, tokens, model, created_at)",
+        "RLS policies: user apni hi conversations dekhe",
+        "Pagination query likho (cursor based)",
+        "Flutter side history load + infinite scroll"
+      ],
+      "deliverable": "Chat schema + migrations",
+      "ref": "4.3"
+    },
+    {
+      "id": "D52",
+      "title": "Rate limiting + usage tracking",
+      "hours": 2,
+      "objectives": [
+        "Per-user cost control",
+        "Abuse se bachna"
+      ],
+      "tasks": [
+        "usage table: user_id, date, tokens_in, tokens_out, cost",
+        "Har request ke baad usage record karo",
+        "Daily/monthly limit enforce karo (limit cross par 429)",
+        "Flutter me 'limit reached' UI state handle karo"
+      ],
+      "deliverable": "Usage tracking + limits",
+      "ref": "4.3 / 5.1"
+    }
+  ]
+}

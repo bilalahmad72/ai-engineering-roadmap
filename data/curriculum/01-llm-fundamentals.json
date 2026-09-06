@@ -1,0 +1,179 @@
+{
+  "block_id": "P1",
+  "order": 2,
+  "title": "LLM Fundamentals + API Integration",
+  "roadmap_ref": "PHASE 1",
+  "goal": "LLM APIs ko confidently call karna: streaming, structured output, tools, cost control.",
+  "days": [
+    {
+      "id": "D05",
+      "title": "Tokens, tokenization aur context window",
+      "hours": 2,
+      "objectives": [
+        "Token kya hai aur cost/limits tokens me kyun measure hote hain",
+        "Context window ka app design par asar"
+      ],
+      "tasks": [
+        "tiktoken (ya Anthropic count_tokens) se apne sample texts ke tokens ginno",
+        "Urdu/Roman Urdu vs English text ka token count compare karo",
+        "3 models ke context windows aur per-1M pricing ka table banao",
+        "Note karo: lambi chat history ka cost par kya asar padta hai"
+      ],
+      "deliverable": "Token/cost comparison table",
+      "ref": "1.1"
+    },
+    {
+      "id": "D06",
+      "title": "Sampling params + message roles",
+      "hours": 2,
+      "objectives": [
+        "temperature, top_p, max_tokens, stop sequences ka practical asar",
+        "system / user / assistant roles ka sahi istemal"
+      ],
+      "tasks": [
+        "Ek hi prompt ko temperature 0 / 0.7 / 1.2 par chalao, outputs compare karo",
+        "max_tokens chhota rakh kar dekho response kaise cut hota hai (stop_reason)",
+        "System prompt badal kar tone/persona change karke dekho",
+        "Findings notes me likho"
+      ],
+      "deliverable": "params_experiment.py + observations",
+      "ref": "1.1"
+    },
+    {
+      "id": "D07",
+      "title": "Model landscape + multimodal",
+      "hours": 2,
+      "objectives": [
+        "GPT / Claude / Gemini / Llama / Mistral ka comparison",
+        "Kaunsa model kis kaam ke liye (cheap vs smart)"
+      ],
+      "tasks": [
+        "Har family ka latest model + pricing + context window note karo",
+        "Multimodal (text+image+audio) support ka comparison banao",
+        "Model selection cheatsheet: task -> recommended model",
+        "Open-source vs API tradeoffs 5 points me likho"
+      ],
+      "deliverable": "Model selection cheatsheet",
+      "ref": "1.1"
+    },
+    {
+      "id": "D08",
+      "title": "OpenAI API hands-on",
+      "hours": 2,
+      "objectives": [
+        "Chat completions end-to-end",
+        "Errors, retries, timeouts handle karna"
+      ],
+      "tasks": [
+        "openai SDK install + first chat completion",
+        "Multi-turn conversation loop banao (history maintain karke)",
+        "Rate limit / invalid key / timeout errors deliberately trigger karke handle karo",
+        "Usage object se token count log karo"
+      ],
+      "deliverable": "openai_chat.py (multi-turn CLI chat)",
+      "ref": "1.2"
+    },
+    {
+      "id": "D09",
+      "title": "Anthropic Messages API hands-on",
+      "hours": 2,
+      "objectives": [
+        "Claude Messages API ka shape",
+        "System prompt, stop_reason, prompt caching"
+      ],
+      "tasks": [
+        "anthropic SDK se first message call",
+        "System prompt alag param me dena (OpenAI se farq note karo)",
+        "Prompt caching try karo aur cost difference dekho",
+        "OpenAI vs Anthropic request/response diff table banao"
+      ],
+      "deliverable": "claude_chat.py + API diff table",
+      "ref": "1.2"
+    },
+    {
+      "id": "D10",
+      "title": "Streaming responses (SSE) code me",
+      "hours": 2,
+      "objectives": [
+        "Dono providers se streaming",
+        "Chunk parsing aur partial updates"
+      ],
+      "tasks": [
+        "OpenAI stream=True se token-by-token print karo",
+        "Anthropic streaming events (content_block_delta) handle karo",
+        "Streaming ke doraan error/disconnect handle karo",
+        "FastAPI me /chat/stream proxy endpoint banao jo aage stream kare"
+      ],
+      "deliverable": "Streaming proxy endpoint (Phase 4B ki base)",
+      "ref": "1.2"
+    },
+    {
+      "id": "D11",
+      "title": "Structured outputs / JSON mode",
+      "hours": 2,
+      "objectives": [
+        "Model se reliable JSON nikalna",
+        "Pydantic se validate karna"
+      ],
+      "tasks": [
+        "Pydantic model define karo (e.g. Invoice, Recipe)",
+        "OpenAI structured outputs / response_format se JSON lo",
+        "Claude me tool-schema trick se JSON lo",
+        "Invalid JSON par retry/repair logic likho"
+      ],
+      "deliverable": "structured_extract.py",
+      "ref": "1.3"
+    },
+    {
+      "id": "D12",
+      "title": "Function calling / tool use - pehla taste",
+      "hours": 2,
+      "objectives": [
+        "Tool definition ka structure",
+        "Tool result wapas model ko dena"
+      ],
+      "tasks": [
+        "Ek get_weather (mock) tool define karo JSON schema ke saath",
+        "Model ka tool_use response parse karke tool chalao",
+        "Result wapas bhej kar final answer lo",
+        "Yehi cheez dono providers me karke syntax farq note karo"
+      ],
+      "deliverable": "first_tool_call.py",
+      "ref": "1.2 / 3.1"
+    },
+    {
+      "id": "D13",
+      "title": "Prompt engineering core",
+      "hours": 2,
+      "objectives": [
+        "Zero-shot, few-shot, CoT, role prompting",
+        "Prompt templates + variables"
+      ],
+      "tasks": [
+        "Ek classification task lo aur zero-shot vs few-shot accuracy compare karo",
+        "Chain-of-thought add karke reasoning task improve karo",
+        "Prompt template class banao (variables inject karne ke liye)",
+        "Output format control: XML tags vs JSON vs markdown"
+      ],
+      "deliverable": "prompts/ folder with templates",
+      "ref": "1.3"
+    },
+    {
+      "id": "D14",
+      "title": "Prompt injection, versioning + Phase 1 mini-project",
+      "hours": 2,
+      "objectives": [
+        "Injection risk samajhna aur mitigate karna",
+        "Prompt A/B testing + cost control"
+      ],
+      "tasks": [
+        "Apne hi prompt par injection attack try karo, phir mitigation lagao",
+        "2 prompt versions ka same input par A/B comparison script likho",
+        "Cheap model + expensive model routing logic add karo",
+        "MINI-PROJECT: CLI assistant - streaming + tool call + structured output, sab ek jagah"
+      ],
+      "deliverable": "Phase 1 mini-project: CLI AI assistant",
+      "ref": "1.3 / 5.1"
+    }
+  ]
+}

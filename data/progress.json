@@ -1,0 +1,538 @@
+{
+  "meta": {
+    "owner": "Bilal Ahmad",
+    "pace": "~2 hours/day, 6 days/week",
+    "started": null,
+    "updated": "2026-09-06 11:39 UTC"
+  },
+  "days": {
+    "D01": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D02": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D03": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D04": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D05": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D06": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D07": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D08": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D09": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D10": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D11": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D12": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D13": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D14": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D15": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D16": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D17": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D18": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D19": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D20": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D21": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D22": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D23": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D24": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D25": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D26": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D27": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D28": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D29": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D30": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D31": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D32": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D33": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D34": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D35": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D36": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D37": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D38": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D39": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D40": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D41": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D42": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D43": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D44": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D45": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D46": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D47": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D48": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D49": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D50": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D51": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D52": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D53": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D54": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D55": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D56": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D57": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D58": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D59": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D60": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D61": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D62": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D63": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D64": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D65": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    },
+    "D66": {
+      "status": "pending",
+      "started": null,
+      "completed": null,
+      "tasks_done": [],
+      "notes": [],
+      "log": []
+    }
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "block_id": "P2",
+  "order": 4,
+  "title": "RAG (Retrieval-Augmented Generation)",
+  "roadmap_ref": "PHASE 2",
+  "goal": "Private data par LLM chalana - chunking se le kar pgvector, hybrid search aur citations tak. Tumhara Postgres/Supabase background yahan shortcut hai.",
+  "days": [
+    {
+      "id": "D21",
+      "title": "RAG kya hai aur kyun (architecture overview)",
+      "hours": 2,
+      "objectives": [
+        "RAG ki zaroorat samajhna (LLM tumhara private data nahi jaanta)",
+        "Naive RAG pipeline ka end-to-end naksha"
+      ],
+      "tasks": [
+        "Pipeline diagram banao: ingest -> chunk -> embed -> store -> retrieve -> prompt -> generate",
+        "RAG vs fine-tuning vs long-context ka comparison likho",
+        "Kaunse client problems RAG se hal hote hain, 5 examples likho (Fiverr gig ideas)",
+        "Ek chhoti hardcoded 'fake RAG' banao: text ko prompt me daal kar sawal pucho"
+      ],
+      "deliverable": "RAG architecture note + fake-RAG script",
+      "ref": "2.1"
+    },
+    {
+      "id": "D22",
+      "title": "Embeddings conceptually",
+      "hours": 2,
+      "objectives": [
+        "Embedding kya hai (text ka meaning vector)",
+        "Embedding models ka comparison"
+      ],
+      "tasks": [
+        "Embedding vs token ka farq clear karo notes me",
+        "OpenAI text-embedding-3-small/large, Gemini, sentence-transformers compare karo",
+        "Dimensions, cost, aur quality ka tradeoff note karo",
+        "Decide karo default embedding model kaunsa use karoge aur kyun"
+      ],
+      "deliverable": "Embedding model decision note",
+      "ref": "2.1"
+    },
+    {
+      "id": "D23",
+      "title": "Embeddings generate + similarity hand se",
+      "hours": 2,
+      "objectives": [
+        "Actual embeddings banana",
+        "Cosine similarity khud calculate karna"
+      ],
+      "tasks": [
+        "10 sentences ke embeddings generate karo",
+        "numpy se cosine similarity matrix banao",
+        "Dekho kaunse sentences semantically qareeb aaye",
+        "Ek 'search' function likho: query -> top 3 similar sentences"
+      ],
+      "deliverable": "similarity_demo.py",
+      "ref": "2.1"
+    },
+    {
+      "id": "D24",
+      "title": "Chunking strategies",
+      "hours": 2,
+      "objectives": [
+        "Fixed, recursive aur semantic chunking",
+        "Chunk size + overlap ka retrieval quality par asar"
+      ],
+      "tasks": [
+        "Ek lambi document lo aur 3 tareeqon se chunk karo",
+        "Chunk size 256 vs 512 vs 1024 par retrieval quality compare karo",
+        "Overlap add karke dekho context kaise behtar hota hai",
+        "Har chunk ke saath metadata attach karo (source, page, section)"
+      ],
+      "deliverable": "chunking.py + comparison notes",
+      "ref": "2.1 / 2.3"
+    },
+    {
+      "id": "D25",
+      "title": "Document loading & parsing",
+      "hours": 2,
+      "objectives": [
+        "PDF/docx/html/txt se clean text nikalna",
+        "Parsing ke real-world masail"
+      ],
+      "tasks": [
+        "pypdf ya pdfplumber se PDF text extract karo",
+        "python-docx aur BeautifulSoup se docx/html handle karo",
+        "Tables, headers/footers, aur scanned PDFs ke masail note karo",
+        "Ek unified loader function banao jo file type detect kare"
+      ],
+      "deliverable": "loaders.py",
+      "ref": "2.3"
+    },
+    {
+      "id": "D26",
+      "title": "pgvector setup (Supabase/Postgres)",
+      "hours": 2,
+      "objectives": [
+        "pgvector extension enable karna",
+        "Documents + chunks ka schema design"
+      ],
+      "tasks": [
+        "Supabase project me vector extension enable karo",
+        "Tables banao: documents, chunks (embedding vector(1536), metadata jsonb)",
+        "RLS policies socho (user apna hi data dekhe)",
+        "Foreign keys + cascade delete set karo"
+      ],
+      "deliverable": "SQL migration file",
+      "ref": "2.2"
+    },
+    {
+      "id": "D27",
+      "title": "Embeddings store + similarity query",
+      "hours": 2,
+      "objectives": [
+        "pgvector me insert aur search",
+        "SQL me distance operators"
+      ],
+      "tasks": [
+        "Chunks + embeddings ko batch insert karo",
+        "<=> (cosine) operator se nearest neighbours query likho",
+        "Ek Postgres function match_chunks(query_embedding, k) banao",
+        "Python se function call karke results verify karo"
+      ],
+      "deliverable": "Working vector search query",
+      "ref": "2.2"
+    },
+    {
+      "id": "D28",
+      "title": "Indexing: HNSW vs IVFFlat",
+      "hours": 2,
+      "objectives": [
+        "Index ke bagair search kyun slow hai",
+        "Do index types ka tradeoff"
+      ],
+      "tasks": [
+        "Bina index ke 10k rows par query time measure karo",
+        "IVFFlat index banao aur time dobara measure karo",
+        "HNSW index banao aur compare karo (build time vs query time vs recall)",
+        "Decision note: kis situation me kaunsa index"
+      ],
+      "deliverable": "Index benchmark note",
+      "ref": "2.2"
+    },
+    {
+      "id": "D29",
+      "title": "Full retrieval pipeline",
+      "hours": 2,
+      "objectives": [
+        "query -> embed -> search -> context assemble",
+        "Top-k tuning"
+      ],
+      "tasks": [
+        "End-to-end retrieve() function likho",
+        "Top-k=3 vs 5 vs 10 ka answer quality par asar dekho",
+        "Context length budget manage karo (token limit ke andar)",
+        "Duplicate/overlapping chunks filter karo"
+      ],
+      "deliverable": "retriever.py",
+      "ref": "2.3"
+    },
+    {
+      "id": "D30",
+      "title": "Prompt assembly + citations",
+      "hours": 2,
+      "objectives": [
+        "Retrieved context ko prompt me sahi tarah daalna",
+        "Source attribution dena"
+      ],
+      "tasks": [
+        "RAG prompt template banao (context XML tags me)",
+        "Model ko chunk IDs cite karne par majboor karo",
+        "Citations ko source metadata se resolve karke show karo",
+        "Jab context me jawab na ho to 'nahi pata' kehne wala instruction test karo"
+      ],
+      "deliverable": "rag_answer.py with citations",
+      "ref": "2.3"
+    },
+    {
+      "id": "D31",
+      "title": "Hybrid search (keyword + vector)",
+      "hours": 2,
+      "objectives": [
+        "Pure vector search kahan fail hota hai",
+        "Full-text + vector ko combine karna"
+      ],
+      "tasks": [
+        "Postgres tsvector full-text search set karo",
+        "Aisi queries dhoondo jahan keyword search jeete (names, IDs, exact terms)",
+        "Reciprocal Rank Fusion (RRF) se dono results merge karo",
+        "Pure vector vs hybrid ka side-by-side comparison"
+      ],
+      "deliverable": "hybrid_search.py",
+      "ref": "2.3"
+    },
+    {
+      "id": "D32",
+      "title": "Re-ranking basics",
+      "hours": 2,
+      "objectives": [
+        "Re-ranker kya karta hai",
+        "Retrieve-then-rerank pattern"
+      ],
+      "tasks": [
+        "Top-20 retrieve karke LLM se top-5 rerank karao",
+        "Cohere rerank / cross-encoder option explore karo",
+        "Latency vs quality tradeoff measure karo",
+        "Decide karo kab reranking worth hai"
+      ],
+      "deliverable": "reranker.py",
+      "ref": "2.3"
+    },
+    {
+      "id": "D33",
+      "title": "Metadata filtering + multi-tenant RAG",
+      "hours": 2,
+      "objectives": [
+        "Per-user document isolation",
+        "Filtered vector search"
+      ],
+      "tasks": [
+        "user_id se filtered vector search karo (WHERE + vector order)",
+        "Date range / document type filters add karo",
+        "RLS policies test karo (dusre user ka data leak na ho)",
+        "Multi-tenant schema ke pitfalls note karo"
+      ],
+      "deliverable": "Filtered + secure retrieval",
+      "ref": "2.3 / 5.3"
+    },
+    {
+      "id": "D34",
+      "title": "RAG evaluation + Phase 2 mini-project",
+      "hours": 2,
+      "objectives": [
+        "RAG kaam kar raha hai ya nahi, kaise pata karein",
+        "Common failure modes"
+      ],
+      "tasks": [
+        "20 question/answer ka eval set banao apne documents se",
+        "Retrieval hit-rate aur answer correctness manually score karo",
+        "Failure modes note karo: bad chunking, missing context, hallucination",
+        "MINI-PROJECT: PDF upload -> ingest -> question -> cited answer (FastAPI se)"
+      ],
+      "deliverable": "Phase 2 mini-project: Document Q&A API",
+      "ref": "2.3 / 5.2"
+    }
+  ]
+}
