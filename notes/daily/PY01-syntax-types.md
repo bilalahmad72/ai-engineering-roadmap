@@ -92,9 +92,31 @@ f"{name!r}"         # "'Bilal'"     quotes ke saath (debugging)
 `0.0000225`. Bina `:.6f` ke Python usay `2.25e-05` print karta hai, jo kisi
 client ko dikhane laayak nahi.
 
+### Numbers me underscore
+
+```python
+1_000_000 == 1000000     # True — sirf parhne ke liye
+```
+
+Bare numbers (token limits, rates) hamesha `1_000_000` likho — ginne me aasan.
+
+### Operator order
+
+```python
+tokens / 1_000_000 * rate     # dono barabar
+tokens * rate / 1_000_000     # ye thoda behtar
+```
+
+`*` aur `/` ki priority barabar hai, bayein se dayein chalte hain. Doosra
+version behtar hai: bara number pehle multiply hota hai, floating-point ki
+chhoti ghaltiyon ka imkaan kam.
+
 ## Code
 
 - [`t1_variables.py`](../../learning/phase-0-python-core/PY01-syntax-types/t1_variables.py)
+  — variables, types, `.__name__`
+- [`t1_formatting.py`](../../learning/phase-0-python-core/PY01-syntax-types/t1_formatting.py)
+  — format specs par practice
 
 Output:
 
@@ -104,6 +126,11 @@ experience_years = 5 (type: int)
 hourly_rate = 20.0 (type: float)
 is_learning_ai = True (type: bool)
 20.00/hour x 120 hours = 2,400.00 per month
+
+Tokens: 15,432
+Cost: $0.231480
+Success: 85.7%
+15,432 tokens = $0.231480 (85.7% success)
 ```
 
 ## Gotchas
@@ -114,6 +141,24 @@ is_learning_ai = True (type: bool)
 | 2 | `f"{value}"` cost ke liye | `f"{value:.6f}"` | chhote numbers `2.25e-05` ban jate hain |
 | 3 | hardcoded number (`20 * 120`) | variable se calculate | value badle to sab jagah badalna pare |
 | 4 | spec ka naam badal dena (`name` vs `full_name`) | wahi naam use karo | API fields exact match maangte hain |
+| 5 | **ghalat variable uth jana** | calculation ke baad ek dafa haath se verify karo | dekho neeche |
+
+### Sabse khatarnak bug: ghalat variable
+
+```python
+# GALAT — cost_per_million ki jagah success_rate
+cost = input_tokens / 1_000_000 * success_rate   # $0.013221
+
+# SAHI
+cost = input_tokens * cost_per_million / 1_000_000   # $0.231480
+```
+
+Koi error nahi. Koi red line nahi. Program kaamyabi se chala aur output ki
+shakal bhi bilkul theek thi — **sirf value 17 guna ghalat thi.**
+
+Yehi qism ka bug production me sabse zyada nuqsan karta hai, kyunki khud ko
+zahir nahi karta. **Bachao:** aisi har calculation ka jawab ek dafa calculator
+par check karo — 2 second lagte hain.
 
 ## Open questions
 
