@@ -2,7 +2,7 @@
 
 **0% complete** — 0/78 days, 3/312 tasks, 0h logged.
 
-Last updated: 2026-09-06 13:11 UTC
+Last updated: 2026-09-06 13:36 UTC
 
 ## Status breakdown
 
@@ -17,6 +17,7 @@ Last updated: 2026-09-06 13:11 UTC
 
 | When | Day | Topic | Event |
 |---|---|---|---|
+| 2026-09-07 01:58 UTC | `PY01` | Syntax, variables, types aur strings | Topic 2 complete: conversion, truthiness rule, isdigit vs float(), EAFP |
 | 2026-09-06 13:36 UTC | `PY01` | Syntax, variables, types aur strings | Topic 1 complete: variables, types, format specs (:, / :.6f / :.1%). Silent wrong-variable bug caught and documented |
 | 2026-09-06 13:11 UTC | `PY01` | Syntax, variables, types aur strings | Note added: notes/ISSUES.md |
 | 2026-09-06 13:11 UTC | `PY01` | Syntax, variables, types aur strings | ISS-001: wrong path when running file manually — fixed, use Run button |

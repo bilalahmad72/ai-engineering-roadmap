@@ -14,7 +14,7 @@ status: draft
 ## Topics
 
 - [x] **Topic 1 — Variables aur types**
-- [ ] Topic 2 — Type conversion
+- [x] **Topic 2 — Type conversion**
 - [ ] Topic 3 — String methods
 - [ ] Topic 4 — f-strings aur formatting
 - [ ] Topic 5 — Truthiness aur membership
@@ -111,8 +111,86 @@ tokens * rate / 1_000_000     # ye thoda behtar
 version behtar hai: bara number pehle multiply hota hai, floating-point ki
 chhoti ghaltiyon ka imkaan kam.
 
+---
+
+## Topic 2 — Type conversion
+
+### Kyun zaroori hai
+
+**Bahar se aane wala har data string hota hai** — `.env`, API response, user
+input, command line. Usay number banana apna kaam hai.
+
+### Conversion ka behaviour
+
+| Code | Natija |
+|---|---|
+| `int("42")` | `42` |
+| `int("  42  ")` | `42` — spaces khud hat jati hain |
+| `int("3.9")` | ❌ **ValueError** — string me decimal ho to seedha nahi |
+| `int(3.9)` | `3` — **kaat deta hai**, round nahi (`round(3.9)` = 4) |
+| `float("3.9")` | `3.9` |
+| `int(float("3.9"))` | `3` — do qadam me |
+
+**Asool:** string se number banana ho to hamesha `float()` — wo poore aur
+decimal dono sambhalta hai. `int()` `"30.5"` par mar jata hai.
+
+### Truthiness — asal asool
+
+`bool(x)` ye nahi poochta "iska matlab kya hai", ye poochta hai
+**"kya ye khaali hai?"**
+
+Falsy sirf ye hain: `False`, `None`, `0`, `0.0`, `""`, `[]`, `{}`.
+**Baqi poori duniya truthy hai.**
+
+```python
+bool("False")   # True   <- 5 characters hain, khaali nahi
+bool("0")       # True   <- ek character hai
+bool("")        # False  <- khaali
+bool(0)         # False
+bool(5)         # True   <- number bhi truthy hota hai agar zero na ho
+```
+
+> **Har type khud batata hai ke uska "khaali" kya hai:**
+> string → `""`, number → `0`, list → `[]`.
+>
+> Isi liye `bool(0)` False hai lekin `bool("0")` True — quotes lagate hi cheez
+> number se string ban gayi.
+
+**Asli bug:** `.env` me `DEBUG=False` likha ho aur seedha `bool()` laga dein to
+jawab hamesha `True` aayega. String "False" khaali nahi hai.
+
+### "Ye number hai?" check karne ke 3 tareeqe
+
+| Tareeqa | Kab | Khamiyan |
+|---|---|---|
+| `isinstance(x, (int, float))` | jab cheez pehle se number ho sakti hai | strings par kaam nahi karta |
+| `"4096".isdigit()` | saade poore positive numbers | `"30.5"` → False, `"-5"` → False |
+| `try: float(x) except ValueError` | **asli project me yehi** | thoda lamba |
+
+Verify kiya hua muqabla:
+
+```
+'4096'   -> isdigit: True,  float works: True
+'30.5'   -> isdigit: False, float works: True     <- yahan farq
+'claude' -> isdigit: False, float works: False
+```
+
+**EAFP** — Python ka andaz: *"Easier to Ask Forgiveness than Permission"*.
+Pehle poochne ke bajaye karke dekho, ghalti ho to sambhal lo.
+
+### Testing ka asool
+
+Do tareeqon ka moazna karna ho to **sirf input badlo, test nahi**. Teen
+values par teen alag converters (`int`/`float`/`str`) lagane se compare karne ko
+kuch bachta hi nahi. Yehi asool aage evals aur prompt A/B testing me bhi hai.
+
+Aur: `str()` kabhi `ValueError` nahi deta — har cheez par chalta hai. Jo test
+har surat me `True` de, wo test nahi hai.
+
 ## Code
 
+- [`t2_conversion.py`](../../learning/phase-0-python-core/PY01-syntax-types/t2_conversion.py)
+  — conversion, truthiness, isinstance, isdigit vs float
 - [`t1_variables.py`](../../learning/phase-0-python-core/PY01-syntax-types/t1_variables.py)
   — variables, types, `.__name__`
 - [`t1_formatting.py`](../../learning/phase-0-python-core/PY01-syntax-types/t1_formatting.py)
