@@ -15,7 +15,7 @@ status: draft
 
 - [x] **Topic 1 — Variables aur types**
 - [x] **Topic 2 — Type conversion**
-- [ ] Topic 3 — String methods
+- [x] **Topic 3 — String methods**
 - [ ] Topic 4 — f-strings aur formatting
 - [ ] Topic 5 — Truthiness aur membership
 
@@ -187,8 +187,88 @@ kuch bachta hi nahi. Yehi asool aage evals aur prompt A/B testing me bhi hai.
 Aur: `str()` kabhi `ValueError` nahi deta — har cheez par chalta hai. Jo test
 har surat me `True` de, wo test nahi hai.
 
+---
+
+## Topic 3 — String methods
+
+### Safai
+
+```python
+text.strip()      # dono taraf ki spaces, \n aur \t bhi
+text.lstrip()     # sirf bayein
+text.rstrip()     # sirf dayein
+```
+
+**`strip()` hamesha behtar hai** `lstrip`/`rstrip` se — input ki shakal ke
+baare me kam farz karo. Agar space na ho to kuch bigarta bhi nahi.
+
+### Case, todna, jorna
+
+```python
+"bilal ahmad".title()        # "Bilal Ahmad"     har lafz
+"bilal ahmad".capitalize()   # "Bilal ahmad"     sirf pehla
+"a=b=c".split("=", 1)        # ["a", "b=c"]      sirf PEHLE par todo
+",".join(["a", "b"])         # "a,b"
+```
+
+**`join()` ulta hai** — separator par method chalta hai, list par nahi:
+`"-".join(list)`, kabhi `list.join("-")` nahi.
+
+**`split("=", 1)` ka doosra argument ahem hai:** API keys me `=` aa sakta hai
+(base64 me aksar aata hai), is liye sirf pehle par todna chahiye.
+
+### Dhoondna
+
+```python
+"opus" in "claude-opus-4"             # True    <- contains
+"file.pdf".endswith(".pdf")           # True
+"claude-x".startswith("claude")       # True
+len("claude")                         # 6       <- .length NAHI
+```
+
+### Slicing
+
+```python
+word[0]     # pehla
+word[-1]    # aakhri     <- Dart me ye nahi hai
+word[:7]    # shuru se 7 tak
+word[-4:]   # aakhri 4
+```
+
+### Immutability
+
+Strings badalti nahi — har method **nayi** string deta hai:
+
+```python
+text.strip()             # natija kho gaya
+text = text.strip()      # natija rakha
+```
+
+### Client angle — API key masking
+
+Log me poori API key likhna bari security ghalti hai (logs share hote hain,
+GitHub par chale jate hain, support tickets me paste hote hain). Sirf kinare
+dikhao:
+
+```python
+f"{value[:7]}...{value[-4:]}"     # sk-ant-...z123
+```
+
+### Validation
+
+`.env` parhne ke baad hamesha check karo, warna galti runtime par API error
+banti hai:
+
+```python
+key.endswith("_API_KEY")
+value.startswith("sk-ant-")
+len(value) > 20
+```
+
 ## Code
 
+- [`t3_strings.py`](../../learning/phase-0-python-core/PY01-syntax-types/t3_strings.py)
+  — .env line parsing, key masking, validation
 - [`t2_conversion.py`](../../learning/phase-0-python-core/PY01-syntax-types/t2_conversion.py)
   — conversion, truthiness, isinstance, isdigit vs float
 - [`t1_variables.py`](../../learning/phase-0-python-core/PY01-syntax-types/t1_variables.py)
@@ -237,6 +317,31 @@ shakal bhi bilkul theek thi — **sirf value 17 guna ghalat thi.**
 Yehi qism ka bug production me sabse zyada nuqsan karta hai, kyunki khud ko
 zahir nahi karta. **Bachao:** aisi har calculation ka jawab ek dafa calculator
 par check karo — 2 second lagte hain.
+
+### Ye bug teen dafa aaya — ek hi khandan
+
+| Kab | Kya hua | Natija |
+|---|---|---|
+| Topic 1 | `cost_per_million` ki jagah `success_rate` | ghalat value, pakri gayi |
+| Topic 2 | `str()` par `try/except` jo kabhi fail nahi hota | hamesha `True` |
+| Topic 3 | `value_length` ki jagah `value_validation` | **ittefaqan sahi** |
+
+Teenon: **ghalat variable uth gaya aur Python ne rok-tok nahi ki.** Dart me
+teenon compile par pakre jate (type mismatch), Python me chup-chaap chalte hain.
+
+### `bool` asal me `int` hai
+
+```python
+True == 1        # True
+True + True      # 2
+True > 20        # False   <- yani 1 > 20, koi error nahi
+```
+
+Isi liye `value_validation > 20` crash nahi hua — `True` ko `1` gin liya gaya.
+
+**Sabse saaf nishani:** koi variable banaya aur istemal nahi kiya (`value_length`
+bana kar chhod diya) — wahin ruk kar dekho. **Ruff** extension ye khud pakar
+leta hai ("unused variable" warning).
 
 ## Open questions
 

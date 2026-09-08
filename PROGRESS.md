@@ -1,8 +1,8 @@
 # 📊 Progress Log
 
-**0% complete** — 0/78 days, 3/312 tasks, 0h logged.
+**0% complete** — 0/78 days, 4/312 tasks, 0h logged.
 
-Last updated: 2026-09-06 13:36 UTC
+Last updated: 2026-09-08 00:59 UTC
 
 ## Status breakdown
 
@@ -17,6 +17,8 @@ Last updated: 2026-09-06 13:36 UTC
 
 | When | Day | Topic | Event |
 |---|---|---|---|
+| 2026-09-08 00:59 UTC | `PY01` | Syntax, variables, types aur strings | Topic 3 complete: string methods, .env parsing, key masking, validation. Bug: bool compared as int (True > 20) |
+| 2026-09-08 00:59 UTC | `PY01` | Syntax, variables, types aur strings | Checked task 2 |
 | 2026-09-07 01:58 UTC | `PY01` | Syntax, variables, types aur strings | Topic 2 complete: conversion, truthiness rule, isdigit vs float(), EAFP |
 | 2026-09-06 13:36 UTC | `PY01` | Syntax, variables, types aur strings | Topic 1 complete: variables, types, format specs (:, / :.6f / :.1%). Silent wrong-variable bug caught and documented |
 | 2026-09-06 13:11 UTC | `PY01` | Syntax, variables, types aur strings | Note added: notes/ISSUES.md |

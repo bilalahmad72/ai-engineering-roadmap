@@ -52,7 +52,7 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 **Tasks**
 
 - [x] int/float/str/bool/None ke saath khelo, type() aur isinstance() use karo
-- [ ] String methods: upper, lower, strip, split, join, replace, startswith, in
+- [x] String methods: upper, lower, strip, split, join, replace, startswith, in
 - [ ] f-string formatting: {value:.2f}, {value:,}, {value!r}, multi-line
 - [ ] PRACTICE: 8 exercises khud likho, check.py green karo
 

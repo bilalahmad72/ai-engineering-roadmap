@@ -10,11 +10,11 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 |---|---|
 | **Progress** | `░░░░░░░░░░░░░░░░░░░░` **0%** |
 | **Days** | 0 / 78 complete |
-| **Tasks** | 3 / 312 checked |
+| **Tasks** | 4 / 312 checked |
 | **Hours logged** | 0 / 156 h |
 | **Pace** | ~2 hours/day, 6 days/week |
 | **Est. remaining** | ~13.0 weeks |
-| **Last updated** | 2026-09-06 13:36 UTC |
+| **Last updated** | 2026-09-08 00:59 UTC |
 
 ✅ Done &nbsp; 🟡 In progress &nbsp; ⬜ Pending &nbsp; ⏭️ Skipped
 
@@ -65,7 +65,7 @@ _Click a phase to expand._
 
 | Day | Topic | Tasks | Status | Notes |
 |---|---|---|---|---|
-| `PY01` | [Syntax, variables, types aur strings](ROADMAP.md#py01-syntax-variables-types-aur-strings) | 1/4 | 🟡 | [📝](notes/daily/PY01-syntax-types.md) [📝](notes/ISSUES.md) |
+| `PY01` | [Syntax, variables, types aur strings](ROADMAP.md#py01-syntax-variables-types-aur-strings) | 2/4 | 🟡 | [📝](notes/daily/PY01-syntax-types.md) [📝](notes/ISSUES.md) |
 | `PY02` | [Collections: list, tuple, dict, set](ROADMAP.md#py02-collections-list-tuple-dict-set) | 0/4 | ⬜ | — |
 | `PY03` | [Control flow: if, loops, comprehensions](ROADMAP.md#py03-control-flow-if-loops-comprehensions) | 0/4 | ⬜ | — |
 | `PY04` | [Functions poori tarah](ROADMAP.md#py04-functions-poori-tarah) | 0/4 | ⬜ | — |
