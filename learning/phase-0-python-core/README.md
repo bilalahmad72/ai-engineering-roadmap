@@ -49,6 +49,7 @@ Poore safar ka board: [README](../../README.md) · Live dashboard: [dashboard](h
 
 **Practice code**
 
+- [`recall.py`](../../learning/phase-0-python-core/PY01-syntax-types/recall.py)
 - [`t1_formatting.py`](../../learning/phase-0-python-core/PY01-syntax-types/t1_formatting.py)
 - [`t1_variables.py`](../../learning/phase-0-python-core/PY01-syntax-types/t1_variables.py)
 - [`t2_conversion.py`](../../learning/phase-0-python-core/PY01-syntax-types/t2_conversion.py)
@@ -79,6 +80,7 @@ Poore safar ka board: [README](../../README.md) · Live dashboard: [dashboard](h
 - `2026-09-08 01:33 UTC` — Checked task 4
 - `2026-09-08 01:35 UTC` — Completed
 - `2026-09-08 01:35 UTC` — PY01 complete — 4 topics, 5 practice files, notes me concept + practice dono
+- `2026-09-08 01:49 UTC` — Recall check: 9/12. Answers strong, rules not yet verbal. Fix: har topic ke baad asool apne lafzon me likhwana
 
 </details>
 
