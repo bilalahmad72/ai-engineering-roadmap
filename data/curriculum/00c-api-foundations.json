@@ -56,5 +56,6 @@
       "deliverable": "sse_demo (server + client) + retry helper",
       "ref": "0.2"
     }
-  ]
+  ],
+  "folder": "phase-0c-api-foundations"
 }

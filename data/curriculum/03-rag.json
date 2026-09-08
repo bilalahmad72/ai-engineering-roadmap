@@ -243,5 +243,6 @@
       "deliverable": "Phase 2 mini-project: Document Q&A API",
       "ref": "2.3 / 5.2"
     }
-  ]
+  ],
+  "folder": "phase-2-rag"
 }

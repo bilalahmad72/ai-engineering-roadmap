@@ -4,20 +4,19 @@ title: Syntax, variables, types aur strings
 phase: Python Core
 date: 2026-09-06
 tags: [python, syntax, types, f-strings, formatting]
-status: draft
+status: complete
 ---
 
 # PY01 — Syntax, variables, types aur strings
 
-> 🔄 **In progress** — topic-by-topic bharta ja raha hai.
+> ✅ **Complete** — 4 topics, 5 practice files, 3 asli bugs pakre gaye.
 
 ## Topics
 
 - [x] **Topic 1 — Variables aur types**
 - [x] **Topic 2 — Type conversion**
 - [x] **Topic 3 — String methods**
-- [ ] Topic 4 — f-strings aur formatting
-- [ ] Topic 5 — Truthiness aur membership
+- [x] **Topic 4 — f-strings deep dive**
 
 ---
 
@@ -111,6 +110,57 @@ tokens * rate / 1_000_000     # ye thoda behtar
 version behtar hai: bara number pehle multiply hota hai, floating-point ki
 chhoti ghaltiyon ka imkaan kam.
 
+
+### Meri practice — Topic 1
+
+`t1_variables.py`
+
+```python
+full_name = "Bilal Ahmad"
+experience_years = 5
+hourly_rate = 20.0
+is_learning_ai = True
+
+print(f"full_name = {full_name} (type: {type(full_name).__name__})")
+
+hours_per_month = 120
+total_earnings = hourly_rate * hours_per_month
+
+print(
+    f"{hourly_rate:.2f}/hour x {hours_per_month} hours "
+    f"= {total_earnings:,.2f} per month"
+)
+```
+
+```
+full_name = Bilal Ahmad (type: str)
+experience_years = 5 (type: int)
+hourly_rate = 20.0 (type: float)
+is_learning_ai = True (type: bool)
+20.00/hour x 120 hours = 2,400.00 per month
+```
+
+`t1_formatting.py`
+
+```python
+input_tokens = 15432
+cost_per_million = 15.0
+success_rate = 0.8567
+
+print(f"Tokens: {input_tokens:,}")
+cost = input_tokens * cost_per_million / 1_000_000
+print(f"Cost: ${cost:.6f}")
+print(f"Success: {success_rate:.1%}")
+print(f"{input_tokens:,} tokens = ${cost:.6f} ({success_rate:.1%} success)")
+```
+
+```
+Tokens: 15,432
+Cost: $0.231480
+Success: 85.7%
+15,432 tokens = $0.231480 (85.7% success)
+```
+
 ---
 
 ## Topic 2 — Type conversion
@@ -186,6 +236,43 @@ kuch bachta hi nahi. Yehi asool aage evals aur prompt A/B testing me bhi hai.
 
 Aur: `str()` kabhi `ValueError` nahi deta — har cheez par chalta hai. Jo test
 har surat me `True` de, wo test nahi hai.
+
+
+### Meri practice — Topic 2
+
+`t2_conversion.py`
+
+```python
+timeout_str = "30.5"
+timeout_float = float(timeout_str)     # do qadam: str -> float -> int
+timeout = int(timeout_float)
+
+# truthiness
+print(bool("False"))   # True   <- 5 characters, khaali nahi
+print(bool("0"))       # True   <- ek character
+print(bool(""))        # False  <- khaali
+print(bool(5))         # True   <- number bhi truthy, agar zero na ho
+
+# isinstance
+print(isinstance(30, int))                       # True
+print(isinstance("only string", (int, float)))   # False
+
+# isdigit vs float() — ek hi test, teen inputs
+try:
+    float(test_decimal)
+    is_number = True
+except ValueError:
+    is_number = False
+```
+
+```
+'4096'   -> isdigit: True,  float works: True
+'30.5'   -> isdigit: False, float works: True     <- yahan farq
+'claude' -> isdigit: False, float works: False
+```
+
+**Yahan mehsoos hua:** teen dafa qareeb qareeb ek jaisa `try/except` block likhna
+para — sirf variable ka naam badla. **Isi takleef ka hal function hai** (PY04).
 
 ---
 
@@ -265,31 +352,135 @@ value.startswith("sk-ant-")
 len(value) > 20
 ```
 
+
+### Meri practice — Topic 3
+
+`t3_strings.py`
+
+```python
+raw_line = "   ANTHROPIC_API_KEY = sk-ant-api03-xyz123   \n"
+
+parts = raw_line.strip().split("=", 1)
+key = parts[0].strip()
+value = parts[1].strip()
+
+# masking — log me poori key kabhi nahi
+prefix = value[:7]
+postfix = value[-4:]
+print(f"Using API Key: {prefix}...{postfix}")
+
+# validation
+print(f"Key ends with _API_KEY : {key.endswith('_API_KEY')}")
+print(f"value starts with sk-ant- : {value.startswith('sk-ant-')}")
+print(f"value length > 20 : {len(value) > 20}")
+```
+
+```
+key = 'ANTHROPIC_API_KEY'
+value = 'sk-ant-api03-xyz123'
+Using API Key: sk-ant-...z123
+Key ends with _API_KEY : True
+value starts with sk-ant- : True
+value length > 20 : False
+```
+
+**Debugging ka tareeqa jo kaam aaya:** har qadam ka natija print karke dekha —
+`split()` ke baad list nazar aayi aur pata chala ke uske andar ab bhi spaces
+bachi hain. Bina us print ke aage ka `strip()` samajh na aata.
+
+
+---
+
+## Topic 4 — f-strings deep dive
+
+### Andar expression bhi chalta hai
+
+```python
+f"{tokens * 2}"          # hisaab
+f"{tokens / 1000:.1f}"   # hisaab + format
+f"{name.upper()}"        # method call
+```
+
+Lekin bara logic f-string ke andar mat daalo — pehle variable banao, phir daalo.
+
+### Alignment — tables ke liye
+
+```python
+f"{name:<10}"     # bayein,  width 10
+f"{name:>10}"     # dayein
+f"{name:^10}"     # beech me
+f"{tokens:<11,}"  # align PEHLE, comma BAAD me
+f"{5:03d}"        # "005"  zeros se bharo
+```
+
+### `{var=}` — debugging ka shortcut
+
+```python
+tokens = 1500
+f"{tokens=}"          # "tokens=1500"        naam AUR value
+f"{cost * 2 = }"      # "cost * 2 = 0.457"   spaces waise hi aate hain
+```
+
+**Sabse kaam ka:** variable ka naam khud likh kar aata hai, is liye **ghalat naam
+likhne ka imkaan hi khatam** — aur wahi bug mujhe teen dafa mila tha.
+
+### Quotes aur literal braces
+
+```python
+f"{d['key']}"        # bahar double, andar single
+f"{{literal}}"       # "{literal}" — do braces = ek brace
+```
+
+### Meri practice — Topic 4
+
+`t4_fstrings.py` — usage report table
+
+```python
+model_a, tokens_a, cost_a = "claude-opus-4", 15234, 0.2285
+model_b, tokens_b, cost_b = "claude-haiku-4", 892450, 0.7139
+
+print(f"{'MODEL':<16} {'TOKENS':<11} {'COST'}")
+print(f"{model_a:<16} {tokens_a:<11,} ${cost_a:.4f}")
+print(f"{model_b:<16} {tokens_b:<11,} ${cost_b:.4f}")
+
+print(f"{tokens_a=}")
+print(f"{cost_a * 2 = }")
+```
+
+```
+MODEL            TOKENS      COST
+claude-opus-4    15,234      $0.2285
+claude-haiku-4   892,450     $0.7139
+tokens_a=15234
+cost_a * 2 = 0.457
+```
+
+**Seekh:** ek column me **ek hi format**. Pehli koshish me `.3f` aur `.4f` mila
+diye thay — table ki seedh toot gayi aur value bhi round ho gayi (`0.7139` ->
+`0.714`). Client ko cost report dikhate waqt ye ghalat hai.
+
+### File naming — dash kabhi nahi
+
+```python
+import t4-fstrings      # SyntaxError — Python ise "t4 minus fstrings" parhta hai
+import t4_fstrings      # sahi
+```
+
+Python files hamesha `snake_case`. Folder ke naam me dash chalta hai
+(`PY01-syntax-types`), sirf `.py` files me nahi.
+
 ## Code
 
-- [`t3_strings.py`](../../learning/phase-0-python-core/PY01-syntax-types/t3_strings.py)
-  — .env line parsing, key masking, validation
-- [`t2_conversion.py`](../../learning/phase-0-python-core/PY01-syntax-types/t2_conversion.py)
-  — conversion, truthiness, isinstance, isdigit vs float
 - [`t1_variables.py`](../../learning/phase-0-python-core/PY01-syntax-types/t1_variables.py)
   — variables, types, `.__name__`
 - [`t1_formatting.py`](../../learning/phase-0-python-core/PY01-syntax-types/t1_formatting.py)
-  — format specs par practice
-
-Output:
-
-```
-full_name = Bilal Ahmad (type: str)
-experience_years = 5 (type: int)
-hourly_rate = 20.0 (type: float)
-is_learning_ai = True (type: bool)
-20.00/hour x 120 hours = 2,400.00 per month
-
-Tokens: 15,432
-Cost: $0.231480
-Success: 85.7%
-15,432 tokens = $0.231480 (85.7% success)
-```
+  — format specs
+- [`t2_conversion.py`](../../learning/phase-0-python-core/PY01-syntax-types/t2_conversion.py)
+  — conversion, truthiness, isdigit vs float
+- [`t3_strings.py`](../../learning/phase-0-python-core/PY01-syntax-types/t3_strings.py)
+  — .env parsing, key masking, validation
+- [`t4_fstrings.py`](../../learning/phase-0-python-core/PY01-syntax-types/t4_fstrings.py)
+  — alignment table, `{var=}` debug
 
 ## Gotchas
 

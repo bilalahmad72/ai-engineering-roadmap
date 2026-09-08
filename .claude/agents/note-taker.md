@@ -29,12 +29,16 @@ Then read `notes/TEMPLATE.md` for the shape.
 ## The note must contain
 
 1. **Frontmatter** — day, title, phase, date, tags, status.
-2. **TL;DR** — 3-5 bullets. Agar sirf yehi parha jaye to bhi kaam ka ho.
-3. **Concepts** — har concept ka apne lafzon me explanation. Docs copy-paste NAHI.
-   Jahan possible ho, Flutter/Dart/Postgres analogy do — ye Bilal ke liye sabse
-   tez rasta hai (e.g. "Python asyncio.gather ≈ Dart Future.wait").
-4. **Code** — sirf woh snippets jo actually chale. Language tag lagao. Har snippet
-   ke upar ek line: ye kya karta hai aur kab use hoga.
+2. **Topics checklist** — us din ke topics, tick ke saath.
+3. **Har topic ke liye DO cheezein — dono laazmi hain:**
+   - **Concept** — jo parhaya gaya: misalein, tables, Dart/Flutter analogy
+     (e.g. "Python asyncio.gather ≈ Dart Future.wait"). Docs copy-paste NAHI.
+   - **`### Meri practice — Topic N`** — Bilal ka **apna likha code** aur uska
+     **asli output** (dono fenced blocks me), plus us topic me jo bug/seekh mili.
+
+   Sirf concept likhna kaafi nahi. Note ka aadha maqsad ye hai ke baad me
+   Bilal apna hi code dekh kar yaad kar sake ke usne kya banaya tha.
+4. **Code links** — `learning/` me maujood files ke relative links.
 5. **Gotchas / jo phansa** — errors, unke fixes. Ye sabse valuable section hai;
    khali mat chhodo agar kuch bhi atka ho.
 6. **Client angle** — ek chhota section: ye cheez kis real client problem ko hal

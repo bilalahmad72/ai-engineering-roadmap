@@ -8,14 +8,21 @@ Ye ek learning tracker hai, product codebase nahi.
 Ek hi asool: **data source of truth hai, baaqi sab generated hai.**
 
 ```
-data/curriculum/*.json   66-day plan — hand-written, rarely changes
+data/curriculum/*.json   78-day plan — hand-written, rarely changes
 data/progress.json       har din/task ka status — sirf track.py isay likhta hai
         ↓  python scripts/track.py sync
-README.md                progress board
-ROADMAP.md               poora day-by-day detail
-PROGRESS.md              activity log
-docs/index.html          interactive dashboard (GitHub Pages)
+README.md                                 progress board
+ROADMAP.md                                poora day-by-day detail
+PROGRESS.md                               activity log
+docs/index.html                           interactive dashboard (GitHub Pages)
+learning/<phase-folder>/README.md         har phase ka apna index
 ```
+
+Har curriculum block me ek `folder` field hai (jaise `phase-0-python-core`).
+Us folder me `README.md` khud generate hota hai — usme phase ka goal, saare din,
+tasks, notes ke links, aur **practice files ki auto-discovered list** hoti hai
+(`learning/<folder>/<DAYID>-*/**.py`). GitHub par folder kholte hi poora phase
+ek jagah nazar aata hai.
 
 ## Kabhi mat karo
 
@@ -63,7 +70,10 @@ output paste kare.** Ye passive hai — samajh aa jata hai, yaad kuch nahi rehta
 Har chhote topic ka loop (classic tutoring, purane andaz me):
 
 1. **Concept parhao** — chhota, misalon ke saath, Flutter/Dart analogy ke saath.
-2. **Note karo** — `notes/daily/` me foran save, taake record bane.
+2. **Note karo** — `notes/daily/` me foran save. Note me **dono** hone chahiyein:
+   - **Concept** jo maine parhaya (misalein, Dart analogy, gotchas)
+   - **"Meri practice"** section — Bilal ka **apna likha code + asli output**,
+     aur us topic me jo bug ya seekh mili
 3. **5-6 use cases** — grip banane ke liye. Lekin **EK WAQT ME EK SAWAL**.
 4. **Woh code + output bhejte hain** → review (kya theek, kya behtar, **kyun**)
    → phir **agla** sawal.

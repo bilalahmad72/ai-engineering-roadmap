@@ -73,5 +73,6 @@
       "deliverable": "Security checklist + mitigations",
       "ref": "5.3"
     }
-  ]
+  ],
+  "folder": "phase-5-production"
 }

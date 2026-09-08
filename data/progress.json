@@ -3,7 +3,7 @@
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
     "started": "2026-09-06",
-    "updated": "2026-09-08 01:03 UTC"
+    "updated": "2026-09-08 01:35 UTC"
   },
   "days": {
     "D01": {
@@ -590,12 +590,14 @@
       "log": []
     },
     "PY01": {
-      "status": "running",
+      "status": "done",
       "started": "2026-09-06",
-      "completed": null,
+      "completed": "2026-09-08",
       "tasks_done": [
         0,
-        1
+        1,
+        2,
+        3
       ],
       "notes": [
         "notes/daily/PY01-syntax-types.md",
@@ -653,6 +655,22 @@
         {
           "at": "2026-09-08 01:03 UTC",
           "text": "Note: bool-is-int concept documented (why True > 20 did not crash)"
+        },
+        {
+          "at": "2026-09-08 01:33 UTC",
+          "text": "Checked task 3"
+        },
+        {
+          "at": "2026-09-08 01:33 UTC",
+          "text": "Checked task 4"
+        },
+        {
+          "at": "2026-09-08 01:35 UTC",
+          "text": "Completed"
+        },
+        {
+          "at": "2026-09-08 01:35 UTC",
+          "text": "PY01 complete — 4 topics, 5 practice files, notes me concept + practice dono"
         }
       ]
     },

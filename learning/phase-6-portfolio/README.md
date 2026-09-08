@@ -1,0 +1,248 @@
+# Portfolio & Positioning
+
+> 3 portfolio projects + case studies + Upwork/Fiverr launch. Yahi se paisa aata hai.
+
+`D57–D66` · roadmap ref `PHASE 6` · **0/10 days** `░░░░░░░░░░░░░░░░` 0%
+
+Poore safar ka board: [README](../../README.md) · Live dashboard: [dashboard](https://bilalahmad72.github.io/ai-engineering-roadmap/)
+
+---
+
+## Is phase ke din
+
+| Day | Topic | Status | Tasks | Notes |
+|---|---|---|---|---|
+| [`D57`](#d57) | Project 1: AI Chat App - backend | ⬜ | 0/4 | — |
+| [`D58`](#d58) | Project 1: Flutter streaming chat UI | ⬜ | 0/4 | — |
+| [`D59`](#d59) | Project 1: history, polish, deploy | ⬜ | 0/4 | — |
+| [`D60`](#d60) | Project 2: RAG Doc Q&A - ingestion | ⬜ | 0/4 | — |
+| [`D61`](#d61) | Project 2: retrieval + citations API | ⬜ | 0/4 | — |
+| [`D62`](#d62) | Project 2: Flutter frontend + demo | ⬜ | 0/4 | — |
+| [`D63`](#d63) | Project 3: AI Agent demo - build | ⬜ | 0/4 | — |
+| [`D64`](#d64) | Project 3: MCP integration + finish | ⬜ | 0/4 | — |
+| [`D65`](#d65) | Case study write-ups | ⬜ | 0/4 | — |
+| [`D66`](#d66) | Upwork/Fiverr launch | ⬜ | 0/4 | — |
+
+---
+
+## D57
+
+### Project 1: AI Chat App - backend
+
+⬜ **Pending** · 2h
+
+**Objectives**
+
+- Scope lock karna
+- Backend + DB ready
+
+**Tasks**
+
+- [ ] Feature list finalize karo (scope creep se bacho)
+- [ ] Edge function proxy + chat schema deploy karo
+- [ ] Auth flow set karo
+- [ ] API contract document karo
+
+**Deliverable:** Project 1 backend live
+
+---
+
+## D58
+
+### Project 1: Flutter streaming chat UI
+
+⬜ **Pending** · 2h
+
+**Objectives**
+
+- Phase 4A ke widgets reuse
+- Polished UX
+
+**Tasks**
+
+- [ ] Chat screen + streaming + markdown integrate karo
+- [ ] Conversation list + new chat + delete
+- [ ] Loading/error/empty states polish karo
+- [ ] Dark mode + responsive check
+
+**Deliverable:** Project 1 app working
+
+---
+
+## D59
+
+### Project 1: history, polish, deploy
+
+⬜ **Pending** · 2h
+
+**Objectives**
+
+- Production ready banana
+- Demo ready banana
+
+**Tasks**
+
+- [ ] History persistence + pagination
+- [ ] Usage limits + error handling
+- [ ] Build release APK / web deploy
+- [ ] Screenshots + 60 second demo video record karo
+
+**Deliverable:** Project 1 shipped + demo
+
+---
+
+## D60
+
+### Project 2: RAG Doc Q&A - ingestion
+
+⬜ **Pending** · 2h
+
+**Objectives**
+
+- PDF upload -> chunks -> embeddings
+- Supabase storage + pgvector
+
+**Tasks**
+
+- [ ] File upload endpoint + Supabase storage
+- [ ] Background ingestion job (parse -> chunk -> embed -> store)
+- [ ] Ingestion status tracking (pending/processing/ready/failed)
+- [ ] Bare documents par test karo
+
+**Deliverable:** Ingestion pipeline live
+
+---
+
+## D61
+
+### Project 2: retrieval + citations API
+
+⬜ **Pending** · 2h
+
+**Objectives**
+
+- Hybrid search + cited answers
+- Streaming answers
+
+**Tasks**
+
+- [ ] Ask endpoint: hybrid retrieve -> rerank -> answer with citations
+- [ ] Answer streaming karo
+- [ ] Per-user document isolation verify karo
+- [ ] Eval set par quality check karo
+
+**Deliverable:** Q&A API with citations
+
+---
+
+## D62
+
+### Project 2: Flutter frontend + demo
+
+⬜ **Pending** · 2h
+
+**Objectives**
+
+- Upload + ask UI
+- Citations dikhana
+
+**Tasks**
+
+- [ ] File picker + upload progress + ingestion status UI
+- [ ] Q&A screen with streaming answer
+- [ ] Citation chips jo source chunk kholein
+- [ ] Screenshots + demo video
+
+**Deliverable:** Project 2 shipped + demo
+
+---
+
+## D63
+
+### Project 3: AI Agent demo - build
+
+⬜ **Pending** · 2h
+
+**Objectives**
+
+- Real task automate karna
+- Apne content pipeline se tie karna
+
+**Tasks**
+
+- [ ] Agent scope: topic -> research -> draft -> format output
+- [ ] Tools define + agent loop wire karo
+- [ ] Guardrails + approval step add karo
+- [ ] 3 real topics par chala kar output quality dekho
+
+**Deliverable:** Agent v1 working
+
+---
+
+## D64
+
+### Project 3: MCP integration + finish
+
+⬜ **Pending** · 2h
+
+**Objectives**
+
+- Apna MCP server plug karna
+- Presentable banana
+
+**Tasks**
+
+- [ ] D46 wala MCP server agent ke saath integrate karo
+- [ ] Simple UI ya CLI polish karo
+- [ ] README + architecture diagram
+- [ ] Demo video record karo
+
+**Deliverable:** Project 3 shipped + demo
+
+---
+
+## D65
+
+### Case study write-ups
+
+⬜ **Pending** · 2h
+
+**Objectives**
+
+- Technical decisions document karna
+- Client-facing language me likhna
+
+**Tasks**
+
+- [ ] Har project ka case study: problem -> approach -> tech decisions -> result
+- [ ] Before/after aur metrics (latency, cost per query) daalo
+- [ ] Screenshots + video embed karo
+- [ ] GitHub repos public + README polish karo
+
+**Deliverable:** 3 case studies published
+
+---
+
+## D66
+
+### Upwork/Fiverr launch
+
+⬜ **Pending** · 2h
+
+**Objectives**
+
+- Profile positioning
+- Service packages + pricing
+
+**Tasks**
+
+- [ ] Headline: Flutter Developer | AI Integration Specialist (LLM, RAG, AI Agents)
+- [ ] 3 gig packages banao: AI chatbot integration, RAG document search, AI agent automation
+- [ ] Pricing set karo ($20-35/hr start, portfolio ke saath scale)
+- [ ] Pehli 10 proposals bhejo / gigs publish karo
+
+**Deliverable:** Live profile + gigs
+
+---
+
+<sub>Generated by `scripts/track.py` — hath se edit mat karo.</sub>

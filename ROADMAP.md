@@ -36,13 +36,13 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 
 ## Python Core (scratch se)
 
-`PY01–PY12` · roadmap ref `PHASE 0.1 — expanded` · 0/12 done
+`PY01–PY12` · roadmap ref `PHASE 0.1 — expanded` · 1/12 done
 
 > **Goal:** Python zero se poori tarah — sirf itna jitna is safar me chahiye, lekin woh mazbooti se. Maqsad: kisi bhi maujooda Python file ko khol kar samajh lena.
 
 ### PY01 — Syntax, variables, types aur strings
 
-🟡 **Running** · 2h · ref `0.1`
+✅ **Done** · 2h · ref `0.1`
 
 **Objectives**
 
@@ -51,12 +51,12 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 
 **Tasks**
 
-- [x] int/float/str/bool/None ke saath khelo, type() aur isinstance() use karo
-- [x] String methods: upper, lower, strip, split, join, replace, startswith, in
-- [ ] f-string formatting: {value:.2f}, {value:,}, {value!r}, multi-line
-- [ ] PRACTICE: 8 exercises khud likho, check.py green karo
+- [x] Topic 1: variables, 5 types, type().__name__, format specs (:,.2f / :.6f / :.1%)
+- [x] Topic 2: int/float/str/bool conversion, truthiness rule, isdigit vs float(), EAFP
+- [x] Topic 3: string methods — strip/split/join/slicing, .env parsing, API key masking, validation
+- [x] Topic 4: f-string deep dive — alignment tables, padding, {var=} debug shortcut
 
-**Deliverable:** PY01 practice — sab tests green
+**Deliverable:** 4 practice files + PY01 note (concept + apna code + output)
 
 **Notes:** [PY01-syntax-types.md](notes/daily/PY01-syntax-types.md), [ISSUES.md](notes/ISSUES.md)
 

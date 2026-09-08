@@ -14,12 +14,12 @@
         "Types, type conversion aur f-strings"
       ],
       "tasks": [
-        "int/float/str/bool/None ke saath khelo, type() aur isinstance() use karo",
-        "String methods: upper, lower, strip, split, join, replace, startswith, in",
-        "f-string formatting: {value:.2f}, {value:,}, {value!r}, multi-line",
-        "PRACTICE: 8 exercises khud likho, check.py green karo"
+        "Topic 1: variables, 5 types, type().__name__, format specs (:,.2f / :.6f / :.1%)",
+        "Topic 2: int/float/str/bool conversion, truthiness rule, isdigit vs float(), EAFP",
+        "Topic 3: string methods — strip/split/join/slicing, .env parsing, API key masking, validation",
+        "Topic 4: f-string deep dive — alignment tables, padding, {var=} debug shortcut"
       ],
-      "deliverable": "PY01 practice — sab tests green",
+      "deliverable": "4 practice files + PY01 note (concept + apna code + output)",
       "ref": "0.1"
     },
     {
@@ -209,5 +209,6 @@
       "deliverable": "track.py me apna feature + code-reading note",
       "ref": "0.1"
     }
-  ]
+  ],
+  "folder": "phase-0-python-core"
 }
