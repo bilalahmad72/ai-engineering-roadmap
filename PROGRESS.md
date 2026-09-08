@@ -17,6 +17,7 @@ Last updated: 2026-09-08 00:59 UTC
 
 | When | Day | Topic | Event |
 |---|---|---|---|
+| 2026-09-08 01:03 UTC | `PY01` | Syntax, variables, types aur strings | Note: bool-is-int concept documented (why True > 20 did not crash) |
 | 2026-09-08 00:59 UTC | `PY01` | Syntax, variables, types aur strings | Topic 3 complete: string methods, .env parsing, key masking, validation. Bug: bool compared as int (True > 20) |
 | 2026-09-08 00:59 UTC | `PY01` | Syntax, variables, types aur strings | Checked task 2 |
 | 2026-09-07 01:58 UTC | `PY01` | Syntax, variables, types aur strings | Topic 2 complete: conversion, truthiness rule, isdigit vs float(), EAFP |

@@ -329,19 +329,77 @@ par check karo — 2 second lagte hain.
 Teenon: **ghalat variable uth gaya aur Python ne rok-tok nahi ki.** Dart me
 teenon compile par pakre jate (type mismatch), Python me chup-chaap chalte hain.
 
-### `bool` asal me `int` hai
+---
+
+## Concept — `bool` asal me `int` hai (Python crash kyun nahi hua)
+
+### Ye bug
 
 ```python
-True == 1        # True
-True + True      # 2
-True > 20        # False   <- yani 1 > 20, koi error nahi
+value_validation = value.startswith("sk-ant-")   # bool -> True
+value_length = len(value)                        # int  -> 19
+
+print(value_validation > 20)   # ← ghalat variable. Crash NAHI hua, False aaya
 ```
 
-Isi liye `value_validation > 20` crash nahi hua — `True` ko `1` gin liya gaya.
+Sawal: `True > 20` likhna to bemani hai — bool ka number se kya muqabla?
+Python ne error kyun nahi diya?
 
-**Sabse saaf nishani:** koi variable banaya aur istemal nahi kiya (`value_length`
-bana kar chhod diya) — wahin ruk kar dekho. **Ruff** extension ye khud pakar
-leta hai ("unused variable" warning).
+### Wajah
+
+Python me **`bool` alag type nahi, `int` ka hi ek chhota qism (subclass) hai.**
+Sirf do qeematein rakh sakta hai:
+
+```
+True  == 1
+False == 0
+```
+
+Khud dekh lo:
+
+```python
+True == 1          # True
+False == 0         # True
+isinstance(True, int)   # True    <- bool "hai hi" int
+True + True        # 2
+True * 5           # 5
+True > 20          # False        <- yani 1 > 20
+```
+
+To `value_validation > 20` asal me `1 > 20` bana, jo bilkul jaiz muqabla hai —
+is liye koi error nahi, khamoshi se `False`.
+
+### Dart se farq
+
+| | Dart | Python |
+|---|---|---|
+| `bool` aur `int` ka rishta | bilkul alag types | `bool` **hai hi** `int` |
+| `true > 20` | ❌ compile error | ✅ chal jata hai → `False` |
+| `true + true` | ❌ compile error | ✅ `2` |
+
+Dart ka compiler ye ghalti pehle hi rok deta. Python me chalti rehti hai.
+
+### Kabhi ye faidemand bhi hai
+
+Boolean ko gin lena Python ka mashhoor idiom hai:
+
+```python
+results = [True, False, True, True]
+sum(results)        # 3    <- kitne True hain
+```
+
+Aage evals me yehi kaam aayega: "20 test cases me se kitne pass hue" — bas
+`sum()` laga do.
+
+### Bachne ka tareeqa
+
+1. **Unused variable** sabse saaf nishani hai. Yahan `value_length` banaya gaya
+   aur kabhi use nahi hua — wahin ruk kar dekhna chahiye tha.
+2. **Ruff** extension ye khud pakar leta hai ("local variable assigned but never
+   used").
+3. Bug theek karne ke baad **aisa test chalao jo pehle fail hota tha.** Yahan:
+   key ko lamba karke dekho `True` aata hai ya nahi. Sirf "ab theek lag raha hai"
+   kaafi nahi — purana ghalat code bhi `False` hi de raha tha.
 
 ## Open questions
 

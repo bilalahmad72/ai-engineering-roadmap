@@ -1,4 +1,4 @@
-raw_line = "   ANTHROPIC_API_KEY = sk-ant-api03-xyz123   \n"
+raw_line = "   ANTHROPIC_API_KEY = sk-ant-api03-xyz123456789   \n"
 
 raw_line_strip = raw_line.strip()
 
@@ -33,4 +33,4 @@ value_validation = value.startswith('sk-ant-')
 value_length = len(value)
 
 print(f"value start with sk-ant- : {value_validation}")
-print(f"value length > 20 : {value_validation > 20}")
+print(f"value length > 20 : {value_length > 20}")
