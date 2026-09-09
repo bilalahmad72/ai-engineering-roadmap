@@ -1,15 +1,15 @@
 # 📊 Progress Log
 
-**1% complete** — 1/78 days, 6/312 tasks, 2h logged.
+**1% complete** — 1/78 days, 7/312 tasks, 2h logged.
 
-Last updated: 2026-09-08 01:35 UTC
+Last updated: 2026-09-09 01:32 UTC
 
 ## Status breakdown
 
 | Status | Days |
 |---|---|
-| ⬜ Pending | 76 |
-| 🟡 Running | 1 |
+| ⬜ Pending | 75 |
+| 🟡 Running | 2 |
 | ✅ Done | 1 |
 | ⏭️ Skipped | 0 |
 
@@ -17,6 +17,10 @@ Last updated: 2026-09-08 01:35 UTC
 
 | When | Day | Topic | Event |
 |---|---|---|---|
+| 2026-09-09 01:32 UTC | `PY02` | Collections: list, tuple, dict, set | Topic 1 (list) complete: append/extend, slicing, sort-returns-None, = is aliasing not copy |
+| 2026-09-09 01:32 UTC | `PY02` | Collections: list, tuple, dict, set | Note added: notes/daily/PY02-collections.md |
+| 2026-09-09 01:32 UTC | `PY02` | Collections: list, tuple, dict, set | Checked task 1 |
+| 2026-09-08 01:49 UTC | `PY02` | Collections: list, tuple, dict, set | Started |
 | 2026-09-08 01:49 UTC | `PY01` | Syntax, variables, types aur strings | Recall check: 9/12. Answers strong, rules not yet verbal. Fix: har topic ke baad asool apne lafzon me likhwana |
 | 2026-09-08 01:35 UTC | `PY01` | Syntax, variables, types aur strings | PY01 complete — 4 topics, 5 practice files, notes me concept + practice dono |
 | 2026-09-08 01:35 UTC | `PY01` | Syntax, variables, types aur strings | Completed |

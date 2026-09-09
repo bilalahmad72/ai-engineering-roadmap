@@ -13,7 +13,7 @@ Poore safar ka board: [README](../../README.md) · Live dashboard: [dashboard](h
 | Day | Topic | Status | Tasks | Notes |
 |---|---|---|---|---|
 | [`PY01`](#py01) | Syntax, variables, types aur strings | ✅ | 4/4 | [📝](../../notes/daily/PY01-syntax-types.md) [📝](../../notes/ISSUES.md) |
-| [`PY02`](#py02) | Collections: list, tuple, dict, set | ⬜ | 0/4 | — |
+| [`PY02`](#py02) | Collections: list, tuple, dict, set | 🟡 | 1/4 | [📝](../../notes/daily/PY02-collections.md) |
 | [`PY03`](#py03) | Control flow: if, loops, comprehensions | ⬜ | 0/4 | — |
 | [`PY04`](#py04) | Functions poori tarah | ⬜ | 0/4 | — |
 | [`PY05`](#py05) | Modules, imports aur project structure | ⬜ | 0/4 | — |
@@ -90,7 +90,7 @@ Poore safar ka board: [README](../../README.md) · Live dashboard: [dashboard](h
 
 ### Collections: list, tuple, dict, set
 
-⬜ **Pending** · 2h
+🟡 **Running** · 2h · started 2026-09-08
 
 **Objectives**
 
@@ -99,12 +99,29 @@ Poore safar ka board: [README](../../README.md) · Live dashboard: [dashboard](h
 
 **Tasks**
 
-- [ ] list: append/extend/insert/remove/pop/sort/reverse + slicing [a:b:c]
+- [x] list: append/extend/insert/remove/pop/sort/reverse + slicing [a:b:c]
 - [ ] dict: get/keys/values/items/update/pop + nested access
 - [ ] set: add/remove/union/intersection + duplicates hatana
 - [ ] tuple: immutability, unpacking, swap; PRACTICE: exercises green karo
 
 **Deliverable:** PY02 practice — sab tests green
+
+**Practice code**
+
+- [`t1_list.py`](../../learning/phase-0-python-core/PY02-collections/t1_list.py)
+
+**Notes**
+
+- [PY02-collections.md](../../notes/daily/PY02-collections.md)
+
+<details><summary>Activity log</summary>
+
+- `2026-09-08 01:49 UTC` — Started
+- `2026-09-09 01:32 UTC` — Note added: notes/daily/PY02-collections.md
+- `2026-09-09 01:32 UTC` — Checked task 1
+- `2026-09-09 01:32 UTC` — Topic 1 (list) complete: append/extend, slicing, sort-returns-None, = is aliasing not copy
+
+</details>
 
 ---
 

@@ -62,7 +62,7 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 
 ### PY02 — Collections: list, tuple, dict, set
 
-⬜ **Pending** · 2h · ref `0.1`
+🟡 **Running** · 2h · ref `0.1`
 
 **Objectives**
 
@@ -71,12 +71,14 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 
 **Tasks**
 
-- [ ] list: append/extend/insert/remove/pop/sort/reverse + slicing [a:b:c]
+- [x] list: append/extend/insert/remove/pop/sort/reverse + slicing [a:b:c]
 - [ ] dict: get/keys/values/items/update/pop + nested access
 - [ ] set: add/remove/union/intersection + duplicates hatana
 - [ ] tuple: immutability, unpacking, swap; PRACTICE: exercises green karo
 
 **Deliverable:** PY02 practice — sab tests green
+
+**Notes:** [PY02-collections.md](notes/daily/PY02-collections.md)
 
 ### PY03 — Control flow: if, loops, comprehensions
 

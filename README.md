@@ -10,18 +10,19 @@ Learning in public. Ye repo ek **live progress board** hai — har din ka plan, 
 |---|---|
 | **Progress** | `░░░░░░░░░░░░░░░░░░░░` **1%** |
 | **Days** | 1 / 78 complete |
-| **Tasks** | 6 / 312 checked |
+| **Tasks** | 7 / 312 checked |
 | **Hours logged** | 2 / 156 h |
 | **Pace** | ~2 hours/day, 6 days/week |
 | **Est. remaining** | ~12.8 weeks |
-| **Last updated** | 2026-09-08 01:35 UTC |
+| **Last updated** | 2026-09-09 01:32 UTC |
 
 ✅ Done &nbsp; 🟡 In progress &nbsp; ⬜ Pending &nbsp; ⏭️ Skipped
 
 ## 📍 Abhi kahan hoon
 
 - 🟡 **In progress:** `D01` — Python setup + syntax (Dart se mapping)  _( Setup )_
-- ⬜ **Next up:** `PY02` — Collections: list, tuple, dict, set  _( Python Core (scratch se) )_
+- 🟡 **In progress:** `PY02` — Collections: list, tuple, dict, set  _( Python Core (scratch se) )_
+- ⬜ **Next up:** `PY03` — Control flow: if, loops, comprehensions  _( Python Core (scratch se) )_
 
 ---
 
@@ -65,7 +66,7 @@ _Click a phase to expand._
 | Day | Topic | Tasks | Status | Notes |
 |---|---|---|---|---|
 | `PY01` | [Syntax, variables, types aur strings](ROADMAP.md#py01-syntax-variables-types-aur-strings) | 4/4 | ✅ | [📝](notes/daily/PY01-syntax-types.md) [📝](notes/ISSUES.md) |
-| `PY02` | [Collections: list, tuple, dict, set](ROADMAP.md#py02-collections-list-tuple-dict-set) | 0/4 | ⬜ | — |
+| `PY02` | [Collections: list, tuple, dict, set](ROADMAP.md#py02-collections-list-tuple-dict-set) | 1/4 | 🟡 | [📝](notes/daily/PY02-collections.md) |
 | `PY03` | [Control flow: if, loops, comprehensions](ROADMAP.md#py03-control-flow-if-loops-comprehensions) | 0/4 | ⬜ | — |
 | `PY04` | [Functions poori tarah](ROADMAP.md#py04-functions-poori-tarah) | 0/4 | ⬜ | — |
 | `PY05` | [Modules, imports aur project structure](ROADMAP.md#py05-modules-imports-aur-project-structure) | 0/4 | ⬜ | — |

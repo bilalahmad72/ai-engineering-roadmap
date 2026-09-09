@@ -3,7 +3,7 @@
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
     "started": "2026-09-06",
-    "updated": "2026-09-08 01:49 UTC"
+    "updated": "2026-09-09 01:32 UTC"
   },
   "days": {
     "D01": {
@@ -679,12 +679,33 @@
       ]
     },
     "PY02": {
-      "status": "pending",
-      "started": null,
+      "status": "running",
+      "started": "2026-09-08",
       "completed": null,
-      "tasks_done": [],
-      "notes": [],
-      "log": []
+      "tasks_done": [
+        0
+      ],
+      "notes": [
+        "notes/daily/PY02-collections.md"
+      ],
+      "log": [
+        {
+          "at": "2026-09-08 01:49 UTC",
+          "text": "Started"
+        },
+        {
+          "at": "2026-09-09 01:32 UTC",
+          "text": "Note added: notes/daily/PY02-collections.md"
+        },
+        {
+          "at": "2026-09-09 01:32 UTC",
+          "text": "Checked task 1"
+        },
+        {
+          "at": "2026-09-09 01:32 UTC",
+          "text": "Topic 1 (list) complete: append/extend, slicing, sort-returns-None, = is aliasing not copy"
+        }
+      ]
     },
     "PY03": {
       "status": "pending",
