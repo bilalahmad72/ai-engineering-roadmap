@@ -72,7 +72,7 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 **Tasks**
 
 - [x] list: append/extend/insert/remove/pop/sort/reverse + slicing [a:b:c]
-- [ ] dict: get/keys/values/items/update/pop + nested access
+- [x] dict: get/keys/values/items/update/pop + nested access
 - [ ] set: add/remove/union/intersection + duplicates hatana
 - [ ] tuple: immutability, unpacking, swap; PRACTICE: exercises green karo
 

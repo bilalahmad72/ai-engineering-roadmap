@@ -3,7 +3,7 @@
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
     "started": "2026-09-06",
-    "updated": "2026-09-09 01:32 UTC"
+    "updated": "2026-09-11 16:43 UTC"
   },
   "days": {
     "D01": {
@@ -683,7 +683,8 @@
       "started": "2026-09-08",
       "completed": null,
       "tasks_done": [
-        0
+        0,
+        1
       ],
       "notes": [
         "notes/daily/PY02-collections.md"
@@ -704,6 +705,14 @@
         {
           "at": "2026-09-09 01:32 UTC",
           "text": "Topic 1 (list) complete: append/extend, slicing, sort-returns-None, = is aliasing not copy"
+        },
+        {
+          "at": "2026-09-11 16:43 UTC",
+          "text": "Checked task 2"
+        },
+        {
+          "at": "2026-09-11 16:43 UTC",
+          "text": "Topic 2 (dict) complete: [] vs .get(), nested .get() chain, in checks keys, pop returns value. Bug #5: looked at top level instead of nested"
         }
       ]
     },
