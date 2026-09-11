@@ -3,7 +3,7 @@
     "owner": "Bilal Ahmad",
     "pace": "~2 hours/day, 6 days/week",
     "started": "2026-09-06",
-    "updated": "2026-09-11 16:43 UTC"
+    "updated": "2026-09-11 17:53 UTC"
   },
   "days": {
     "D01": {
@@ -684,7 +684,8 @@
       "completed": null,
       "tasks_done": [
         0,
-        1
+        1,
+        2
       ],
       "notes": [
         "notes/daily/PY02-collections.md"
@@ -713,6 +714,14 @@
         {
           "at": "2026-09-11 16:43 UTC",
           "text": "Topic 2 (dict) complete: [] vs .get(), nested .get() chain, in checks keys, pop returns value. Bug #5: looked at top level instead of nested"
+        },
+        {
+          "at": "2026-09-11 17:53 UTC",
+          "text": "Checked task 3"
+        },
+        {
+          "at": "2026-09-11 17:53 UTC",
+          "text": "Topic 3 (set) complete: dedup, union/intersection/difference, in-speed. Bilal caught my wrong expected output (7 -> 6)"
         }
       ]
     },

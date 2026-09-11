@@ -73,7 +73,7 @@ _Generated from `data/curriculum/` — edit those files, not this one._
 
 - [x] list: append/extend/insert/remove/pop/sort/reverse + slicing [a:b:c]
 - [x] dict: get/keys/values/items/update/pop + nested access
-- [ ] set: add/remove/union/intersection + duplicates hatana
+- [x] set: add/remove/union/intersection + duplicates hatana
 - [ ] tuple: immutability, unpacking, swap; PRACTICE: exercises green karo
 
 **Deliverable:** PY02 practice — sab tests green

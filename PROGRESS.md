@@ -1,8 +1,8 @@
 # 📊 Progress Log
 
-**1% complete** — 1/78 days, 8/312 tasks, 2h logged.
+**1% complete** — 1/78 days, 9/312 tasks, 2h logged.
 
-Last updated: 2026-09-11 16:43 UTC
+Last updated: 2026-09-11 17:53 UTC
 
 ## Status breakdown
 
@@ -17,6 +17,8 @@ Last updated: 2026-09-11 16:43 UTC
 
 | When | Day | Topic | Event |
 |---|---|---|---|
+| 2026-09-11 17:53 UTC | `PY02` | Collections: list, tuple, dict, set | Topic 3 (set) complete: dedup, union/intersection/difference, in-speed. Bilal caught my wrong expected output (7 -> 6) |
+| 2026-09-11 17:53 UTC | `PY02` | Collections: list, tuple, dict, set | Checked task 3 |
 | 2026-09-11 16:43 UTC | `PY02` | Collections: list, tuple, dict, set | Topic 2 (dict) complete: [] vs .get(), nested .get() chain, in checks keys, pop returns value. Bug #5: looked at top level instead of nested |
 | 2026-09-11 16:43 UTC | `PY02` | Collections: list, tuple, dict, set | Checked task 2 |
 | 2026-09-09 01:32 UTC | `PY02` | Collections: list, tuple, dict, set | Topic 1 (list) complete: append/extend, slicing, sort-returns-None, = is aliasing not copy |

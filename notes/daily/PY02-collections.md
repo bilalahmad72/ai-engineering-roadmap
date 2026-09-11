@@ -23,7 +23,7 @@ status: draft
 
 - [x] **Topic 1 — List**
 - [x] **Topic 2 — Dict**
-- [ ] Topic 3 — Set
+- [x] **Topic 3 — Set**
 - [ ] Topic 4 — Tuple
 
 ---
@@ -366,10 +366,90 @@ Sabit kiya `usage` me `cache_tokens: 100` daal kar: purana code phir bhi `0`.
 > **"Agar mera code ghalat hota, to kya ye output badal jata?"**
 > Jawab "nahi" hai to kuch test hi nahi hua.
 
+---
+
+## Topic 3 — Set
+
+Aisi collection jisme **har cheez sirf ek dafa**, aur **koi tarteeb nahi**.
+
+```python
+tags = {"ai", "flutter"}     # curly braces — lekin dict nahi
+empty = set()                # {} khaali DICT banata hai, set nahi
+```
+
+### Do bare faide
+
+**1. Duplicates khud hat jate hain**
+
+```python
+set(["a", "b", "a", "c", "b"])      # {'a', 'b', 'c'}
+list(set(chunks))                    # wapas list — lekin ORDER kho jata hai
+```
+
+**2. `in` bohot tez hai** — list me `in` har cheez dekhta hai (1M items = 1M
+qadam), set seedha pahunchta hai. *"Ye pehle dekha hai?"* wale checks me
+hamesha set.
+
+### Methods
+
+```python
+tags.add("rag")          # list ka append nahi — add
+tags.remove("x")         # na ho to KeyError
+tags.discard("x")        # na ho to chup — mehfooz
+```
+
+### Set ki math (RAG hybrid search isi par chalti hai — D31)
+
+```python
+a | b     # union        — dono me jo hai
+a & b     # intersection — common
+a - b     # difference   — a me hai, b me nahi
+```
+
+### Kab set, kab list
+
+| Chahiye | Use |
+|---|---|
+| tarteeb / duplicates chalte hain / `x[0]` | list |
+| sirf "hai ya nahi", duplicates nahi | **set** |
+
+### 🖊️ Meri practice — Topic 3
+
+`t3_set.py` — do searches ke chunks milana (RAG ka asli masla)
+
+```python
+keyword_results = ["chunk_1", "chunk_4", "chunk_7", "chunk_1", "chunk_9"]
+vector_results = ["chunk_4", "chunk_2", "chunk_7", "chunk_4", "chunk_5"]
+
+keyword_set = set(keyword_results)      # sets EK dafa, shuru me
+vector_set = set(vector_results)
+
+print(f"unique keyword: {len(keyword_set)}")
+print(f"both found: {keyword_set & vector_set}")
+print(f"total unique: {len(keyword_set | vector_set)}")
+print(f"only vector: {vector_set - keyword_set}")
+```
+
+```
+unique keyword: 4
+both found: {'chunk_4', 'chunk_7'}
+total unique: 6
+only vector: {'chunk_5', 'chunk_2'}
+```
+
+**Do seekhein:**
+- Expected output me maine (Claude) `7` likha tha — **ghalat**. Bilal ne khud
+  gin kar pakra: 4 + 4 − 2 common = **6**. *"Agar code ghalat hota to kya
+  output badalta?"* wala asool diye hue expected output par bhi lagta hai.
+- Variable banaya to **har jagah** use karo. Aadha istemal (`keyword_set` sirf
+  `|` me, baaqi jagah dobara `set(...)`) sabse bura hai — parhne wale ko lagta
+  hai dono me koi farq hai.
+
 ## Code
 
 - [`t1_list.py`](../../learning/phase-0-python-core/PY02-collections/t1_list.py)
 - [`t2_dict.py`](../../learning/phase-0-python-core/PY02-collections/t2_dict.py)
+- [`t3_set.py`](../../learning/phase-0-python-core/PY02-collections/t3_set.py)
 
 ## Open questions
 
